@@ -10,11 +10,29 @@
     font-size: 17px;
     width: auto;
 }
-
-.agr {
+.botao {
+    
+}
+.img {
+    
     display: none;
 }
-
-.img {
-    display: none;
+#agro {
+    margin-top: 10px;
+    height: 28vw;
+}
+#daf {
+    margin-top: 10px;
+    height: 28vw;
+}
+#asfaltos {
+    margin-top: 10px;
+    height: 28vw;
+}
+#engelog {
+    margin-top: 10px;
+    height: 28vw;
+}
+#numero {
+    color: red;
 }

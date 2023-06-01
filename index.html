@@ -16,6 +16,7 @@
         Número: <input type="number" name="numero" id="numero"class="boxes"><br>
         Endereço: <input type="text" name="endereco" id="endereco"class="boxes"><br>
     </div>
+    <input type="submit" value="Pronto" onclick="clicar()" class="botao">
     <div>
         <select class="escolher" name="escolher" id="empre" onchange="empresa()">
             <option value="1" class="emp" name="emp">Agro</option>
@@ -24,13 +25,12 @@
             <option value="4" class="emp" name="emp">Engelog</option>
         </select>
     </div>
-    <input type="submit" value="Pronto" onclick="clicar()">
-
+    <div id="info"></div>
     <div id="aparece">
-        <img class="img" src="imagens/agro 1.jpg">
-        <img class="img" src="imagens/daf.jpg">
-        <img class="img" src="imagens/asfaltos.jpg">
-        <img class="img" src="imagens/engelog.jpg">
+        <img class="img" id="agro" src="imagens/agro 1.jpg">
+        <img class="img" id="daf" src="imagens/daf.jpg">
+        <img class="img" id="asfaltos" src="imagens/asfaltos.jpg">
+        <img class="img" id="engelog" src="imagens/engelog.jpg">
     </div>
 </body>
 </html>

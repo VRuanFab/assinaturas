@@ -1,0 +1,20 @@
+.boxes {
+    margin: 15px;
+}
+.bloqueada {
+    display: none;
+}
+.escolher {
+    border-radius: 5px;
+    height: 40px;
+    font-size: 17px;
+    width: auto;
+}
+
+.agr {
+    display: none;
+}
+
+.img {
+    display: none;
+}

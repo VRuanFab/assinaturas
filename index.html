@@ -4,28 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Titulo</title>
+    <title>Assinaturas Fornecedora</title>
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
 </head>
 <body>
-    <h1>Assinaturas</h1>
+    <h1 style="text-align: center;">Assinaturas</h1>
     <div>
         Nome: <input type="text" name="nome" id="nome" class="boxes"><br>
         Email: <input type="email" name="email" id="email"class="boxes"><br>
         Número: <input type="number" name="numero" id="numero"class="boxes"><br>
         Endereço: <input type="text" name="endereco" id="endereco"class="boxes"><br>
     </div>
-    <input type="submit" value="Pronto" onclick="clicar()" class="botao">
-    <div>
+    <div class="igual">
         <select class="escolher" name="escolher" id="empre" onchange="empresa()">
             <option value="1" class="emp" name="emp">Agro</option>
             <option value="2" class="emp" name="emp">Daf</option>
             <option value="3" class="emp" name="emp">Asfaltos</option>
             <option value="4" class="emp" name="emp">Engelog</option>
         </select>
+        <input type="submit" value="Pronto" onclick="clicar()">
+        <div class="esc1">
+            <p id="mail" class="mail1"></p>
+            <p id="telefone" class="telefone1"></p>
+            <p id="localizacao" class="localizacao1"></p>
+        </div>
     </div>
-    <div id="info"></div>
     <div id="aparece">
         <img class="img" id="agro" src="imagens/agro 1.jpg">
         <img class="img" id="daf" src="imagens/daf.jpg">

@@ -1,4 +1,4 @@
-    function clicar(){
+    function clicar() {
         let nome = document.getElementById('nome').value;
         document.getElementById('name').innerHTML = nome
 

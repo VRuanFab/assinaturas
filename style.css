@@ -11,7 +11,6 @@
     width: auto;
 }
 .img {
-    
     display: none;
 }
 #agro {
@@ -27,6 +26,10 @@
     height: 28vw;
 }
 #engelog {
+    margin-top: 10px;
+    height: 28vw;
+}
+#pavimentos {
     margin-top: 10px;
     height: 28vw;
 }

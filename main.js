@@ -20,23 +20,33 @@ function empresa() {
             imagem[1].style.display = "none";
             imagem[2].style.display = "none";
             imagem[3].style.display = "none";
+            imagem[4].style.display = "none";
 
         } else if (empresas[1].selected) {
             imagem[1].style.display = "block";
             imagem[0].style.display = "none";
             imagem[2].style.display = "none";
             imagem[3].style.display = "none";
+            imagem[4].style.display = "none";
             
         } else if (empresas[2].selected) {
             imagem[2].style.display = "block";
             imagem[0].style.display = "none";
             imagem[1].style.display = "none";
             imagem[3].style.display = "none";
+            imagem[4].style.display = "none";
 
         } else if (empresas[3].selected) {
             imagem[3].style.display = "block";
             imagem[0].style.display = "none";
             imagem[1].style.display = "none";
             imagem[2].style.display = "none";
-        } 
+            imagem[4].style.display = "none";
+        } else if (empresas[4].selected) {
+            imagem[4].style.display = "block";
+            imagem[0].style.display = "none";
+            imagem[1].style.display = "none";
+            imagem[2].style.display = "none";
+            imagem[3].style.display = "none";
+        }
 }

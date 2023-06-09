@@ -26,12 +26,15 @@ body {
 .local {
     margin-bottom: 14px;
 }
+
+
 #agrodiv {
     position: relative;
     margin: auto;
 }
 #agrodiv img{
     width: 97%;
+    image-rendering: inherit;
 }
 #agrodiv .name1 {
     position: absolute;
@@ -42,6 +45,7 @@ body {
     font-size: 3vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bolder;
+    text-align: justify;
 }
 #agrodiv .cargo1 {
     position: absolute;
@@ -52,6 +56,7 @@ body {
     font-size: 1.5vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 12px;
+    text-align: justify;
 }
 #agrodiv .mail1 {
     position: absolute;
@@ -62,6 +67,7 @@ body {
     font-size: 160%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bolder;
+    text-align: justify;
 }
 #agrodiv .telefone1 {
     position: absolute;
@@ -72,30 +78,49 @@ body {
     font-size: 157%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bolder;
+    text-align: justify;
 }
 #agrodiv .localizacao1 {
     position: absolute;
-    bottom: 18%;
+    bottom: 13%;
     left: 49%;
-    text-align: center;
+    text-align: left;
     color: #25427A;
-    font-size: 157%;
+    font-size: 1.8vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    line-height: 12px;
+    line-height: 37px;
+    width: 30%;
+    word-wrap: break-word;
+    text-align: justify;
 }
+
+
 #dafdiv {
     position: relative;
     margin: auto;
 }
+#dafdiv img {
+    width: 90%;
+}
 #dafdiv .name1 {
     position: absolute;
-    bottom: 67%;
-    left: 49%;
+    bottom: 76%;
+    left: 46%;
     text-align: center;
     color: orange;
     font-size: 200%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bolder;
+}
+#dafdiv .cargo1 {
+    position: absolute;
+    bottom: 70%;
+    left: 46%;
+    text-align: center;
+    color: #25427A;
+    font-size: 1.5vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 12px;
 }
 
 

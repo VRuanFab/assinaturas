@@ -1,6 +1,9 @@
     function clicar() {
-        let nome = document.getElementById('nome').value;
+        var nome = document.getElementById('nome').value;
         document.getElementById('name').innerHTML = nome
+
+        var funcao = document.getElementById('funcao').value;
+        document.getElementById('cargo').innerHTML = funcao
 
         var email = document.getElementById('email').value;
         document.getElementById('mail').innerHTML = email
@@ -12,7 +15,7 @@
         document.getElementById('localizacao').innerHTML = endereco
     }
 
-function empresa() {
+    function empresa() {
     var empresas = document.querySelectorAll('.emp')
     let imagem = document.querySelectorAll('.img')
         if (empresas[0].selected) {

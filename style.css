@@ -1,5 +1,8 @@
+.caixas {
+    margin: 5px;
+}
 .boxes {
-    margin: 15px;
+    margin-bottom: 26px;
 }
 .bloqueada {
     display: none;
@@ -12,24 +15,62 @@
 }
 .img {
     display: none;
+    width: 85%;
 }
-#agro {
-    margin-top: 10px;
-    height: 28vw;
+#agrodiv {
+    position: relative;
+    margin: auto;
 }
-#daf {
-    margin-top: 10px;
-    height: 28vw;
+#agrodiv img{
+    width: 97%;
 }
-#asfaltos {
-    margin-top: 10px;
-    height: 28vw;
+#agrodiv .name1 {
+    position: absolute;
+    bottom: 67%;
+    left: 49%;
+    text-align: center;
+    color: #1a4b88;
+    font-size: 200%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
 }
-#engelog {
-    margin-top: 10px;
-    height: 28vw;
+#agrodiv .cargo1 {
+    position: absolute;
+    bottom: 58%;
+    left: 49%;
+    text-align: center;
+    color: #1d487c;
+    font-size: 157%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
 }
-#pavimentos {
-    margin-top: 10px;
-    height: 28vw;
+#agrodiv .mail1 {
+    position: absolute;
+    bottom: 18%;
+    left: 49%;
+    text-align: center;
+    color: #1d487c;
+    font-size: 160%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+#agrodiv .telefone1 {
+    position: absolute;
+    bottom: 26%;
+    left: 49%;
+    text-align: center;
+    color: #1a4b88;
+    font-size: 157%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+#agrodiv .localizacao1 {
+    position: absolute;
+    bottom: 7%;
+    left: 49%;
+    text-align: center;
+    color: #1a4b88;
+    font-size: 157%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
 }

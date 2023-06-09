@@ -10,10 +10,11 @@
 </head>
 <body>
     <h1 style="text-align: center;">Assinaturas</h1>
-    <div>
+    <div class="caixas">
         Nome: <input type="text" name="nome" id="nome" class="boxes"><br>
+        Função: <input type="text" name="funcao" id="funcao" class="boxes"><br>
         Email: <input type="email" name="email" id="email"class="boxes"><br>
-        Número: <input type="number" name="numero" id="numero"class="boxes"><br>
+        telefone: <input type="number" name="numero" id="numero"class="boxes"><br>
         Endereço: <input type="text" name="endereco" id="endereco"class="boxes"><br>
     </div>
     <div class="igual">
@@ -25,19 +26,43 @@
             <option value="5" class="emp" name="emp">pavimentos</option>
         </select>
         <input type="submit" value="Pronto" onclick="clicar()">
-        <div class="esc1">
+    </div>
+    <div id="agrodiv">
+        <img class="img" id="agro" src="imagens/agro 1.jpg">
             <p id="name" class="name1"></p>
+            <p id="cargo" class="cargo1"></p>
             <p id="mail" class="mail1"></p>
             <p id="telefone" class="telefone1"></p>
             <p id="localizacao" class="localizacao1"></p>
-        </div>
     </div>
-    <div id="aparece">
-        <img class="img" id="agro" src="imagens/agro 1.jpg">
+    <div id="dafdiv">
         <img class="img" id="daf" src="imagens/daf.jpg">
-        <img class="img" id="asfaltos" src="imagens/asfaltos.jpg">
-        <img class="img" id="engelog" src="imagens/engelog.jpg">
-        <img class="img" id="pavimentos" src="imagens/pavimentos.jpg">
+        <p id="name" class="name1"></p>
+            <p id="mail" class="mail1"></p>
+            <p id="telefone" class="telefone1"></p>
+            <p id="localizacao" class="localizacao1"></p>
     </div>
+    <div id="asfaltos">
+        <img class="img" id="asfaltos" src="imagens/asfaltos.jpg">
+        <p id="name" class="name1"></p>
+            <p id="mail" class="mail1"></p>
+            <p id="telefone" class="telefone1"></p>
+            <p id="localizacao" class="localizacao1"></p>
+    </div>
+    <div id="engelogdiv">
+        <img class="img" id="engelog" src="imagens/engelog.jpg">
+        <p id="name" class="name1"></p>
+            <p id="mail" class="mail1"></p>
+            <p id="telefone" class="telefone1"></p>
+            <p id="localizacao" class="localizacao1"></p>
+    </div>
+    <div id="pavimentosdiv">
+        <img class="img" id="pavimentos" src="imagens/pavimentos.jpg">
+        <p id="name" class="name1"></p>
+            <p id="mail" class="mail1"></p>
+            <p id="telefone" class="telefone1"></p>
+            <p id="localizacao" class="localizacao1"></p>
+    </div>
+
 </body>
 </html>

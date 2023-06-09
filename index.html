@@ -13,11 +13,16 @@
     <div class="caixas">
         Nome: <input type="text" name="nome" id="nome" class="boxes"><br>
         Cargo: <input type="text" name="funcao" id="funcao" class="boxes"><br>
-        Email: <input type="email" name="email" id="email"class="boxes"><br>
+        Email: <input type="email" name="email" id="email"class="boxes" placeholder="nome.sobrenome"><br>
         telefone: <input type="number" name="numero" id="numero"class="boxes"><br>
-        Endereço: <input type="text" name="endereco" id="endereco"class="boxes"><br>
+        Endereço: <select name="local" id="localidade" class="local" onchange="localidade()">
+                    <option value="1" class="location">Matriz</option>
+                    <option value="2" class="location">Itaitinga</option>
+                    <option value="3" class="location">Bom Jesus</option>
+                    <option value="4" class="location">Parnamirim</option>
+                </select><br>
     </div>
-    <div class="igual">
+        <div class="igual">
         <select class="escolher" name="escolher" id="empre" onchange="empresa()">
             <option value="1" class="emp" name="emp">Agro</option>
             <option value="2" class="emp" name="emp">Daf</option>
@@ -26,46 +31,48 @@
             <option value="5" class="emp" name="emp">pavimentos</option>
         </select>
         <input type="submit" value="Pronto" onclick="clicar()">
-    </div>
-    <div id="agrodiv" class="esc">
+        </div>
+    <div>
+        <div id="agrodiv" class="esc">
             <img class="img" id="agro" src="imagens/agro 1.jpg">
             <p id="nameagr" class="name1"></p>
             <p id="cargoagr" class="cargo1"></p>
             <p id="mailagr" class="mail1"></p>
             <p id="telefoneagr" class="telefone1"></p>
             <p id="localizacaoagr" class="localizacao1"></p>
-    </div>
-    <div id="dafdiv" class="esc">
+        </div>
+        <div id="dafdiv" class="esc">
             <img class="imgdaf" id="daf" src="imagens/daf.jpg">
             <p id="namedaf" class="name1"></p>
             <p id="cargodaf" class="cargo1"></p>
             <p id="maildaf" class="mail1"></p>
             <p id="telefonedaf" class="telefone1"></p>
             <p id="localizacaodaf" class="localizacao1"></p>
-    </div>
-    <div id="asfaltosdiv" class="esc">
+        </div>
+        <div id="asfaltosdiv" class="esc">
             <img class="imgasf" id="asfaltos" src="imagens/asfaltos.jpg">
             <p id="nameasf" class="name1"></p>
             <p id="cargoasf" class="cargo1"></p>
             <p id="mailasf" class="mail1"></p>
             <p id="telefoneasf" class="telefone1"></p>
             <p id="localizacaoasf" class="localizacao1"></p>
-    </div>
-    <div id="engelogdiv" class="esc">
+        </div>
+        <div id="engelogdiv" class="esc">
             <img class="img" id="engelog" src="imagens/engelog.jpg">
             <p id="nameeng" class="name1"></p>
             <p id="cargoeng" class="cargo1"></p>
             <p id="maileng" class="mail1"></p>
             <p id="telefoneeng" class="telefone1"></p>
             <p id="localizacaoeng" class="localizacao1"></p>
-    </div>
-    <div id="pavimentosdiv" class="esc">
+        </div>
+        <div id="pavimentosdiv" class="esc">
             <img class="img" id="pavimentos" src="imagens/pavimentos.jpg">
             <p id="namepav" class="name1"></p>
             <p id="cargopav" class="cargo1"></p>
             <p id="mailpav" class="mail1"></p>
             <p id="telefonepav" class="telefone1"></p>
             <p id="localizacaopav" class="localizacao1"></p>
+        </div>
     </div>
 
 </body>

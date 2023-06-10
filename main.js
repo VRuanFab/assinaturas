@@ -1,3 +1,4 @@
+   window.addEventListener('aberto', clicar())
     function clicar() {
         function empresa() {
             var empresas = document.querySelectorAll('.emp')
@@ -11,6 +12,7 @@
                     imagem[4].style.display = "none";
                     info(0);
                     localidade();
+                    bloquear();
         
                 } else if (empresas[1].selected) {
                     //daf
@@ -21,6 +23,7 @@
                     imagem[4].style.display = "none";
                     info(1);
                     localidade();
+                    desbloquear();
                     
                 } else if (empresas[2].selected) {
                     //asf
@@ -31,6 +34,7 @@
                     imagem[4].style.display = "none";
                     info(2);
                     localidade();
+                    desbloquear();
         
                 } else if (empresas[3].selected) {
                     //eng
@@ -41,6 +45,7 @@
                     imagem[4].style.display = "none";
                     info(3);
                     localidade();
+                    desbloquear();
 
                 } else if (empresas[4].selected) {
                     //pav
@@ -51,6 +56,7 @@
                     imagem[3].style.display = "none";
                     info(4);
                     localidade();
+                    desbloquear();
                 }
         }
         empresa();
@@ -62,9 +68,6 @@
     
                     var funcao = document.getElementById('funcao').value;
                     document.getElementById('cargoagr').innerHTML = funcao
-    
-                    var email = document.getElementById('email').value;
-                    document.getElementById('mailagr').innerHTML = email
     
                     var number = document.getElementById('numero').value;
                     document.getElementById('telefoneagr').innerHTML = number
@@ -138,6 +141,7 @@
                 enderecos(4);
         }
         }
+
         function enderecos(base) {
             if (base == 0) {
             document.getElementById('localizacaoagr').innerHTML = "Rodovia BR 116, 2524 - Km 65 - Cajazeiras, Fortaleza - CE"
@@ -175,5 +179,13 @@
             document.getElementById('localizacaoeng').innerHTML = "Avenida Ademar Diogenes, 583 - BR 135, KM 349 - São Pedro, Bom Jesus - PI"
             document.getElementById('localizacaopav').innerHTML = "Avenida Ademar Diogenes, 583 - BR 135, KM 349 - São Pedro, Bom Jesus - PI"
         }
-        }
+    }
+    }
+    function bloquear() {
+        let emailbloq = document.getElementById('email')
+            emailbloq.disabled = true;
+    }
+    function desbloquear() {
+        let emailbloq = document.getElementById('email')
+            emailbloq.disabled = false;
     }

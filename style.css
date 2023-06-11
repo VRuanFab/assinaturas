@@ -1,4 +1,3 @@
-
 body {
     align-items: flex-end;
 }
@@ -72,13 +71,12 @@ body {
 }
 #agrodiv .telefone1 {
     position: absolute;
-    bottom: 26%;
-    left: 49%;
+    bottom: 15%;
+    left: 83.7%;
     text-align: center;
     color: #25427A;
     font-size: 157%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bolder;
     text-align: justify;
 }
 #agrodiv .localizacao1 {
@@ -113,14 +111,21 @@ body {
     bottom: 24.5%;
     left: 83.8%;
 }
-
+#agrodiv .tel {
+    position: absolute;
+    font-size: 1.8vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #25427A;
+    left: 73.3%;
+    bottom: 15%;
+}
 
 #dafdiv {
     position: relative;
     margin: auto;
 }
 #dafdiv img {
-    image-rendering: inherit;
+    width: 93%;
 }
 #dafdiv .name1 {
     position: absolute;

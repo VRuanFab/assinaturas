@@ -1,11 +1,15 @@
-body {
-    align-items: flex-end;
+*{
+    margin: 0;
+    padding: 0;
 }
+
 .caixas {
     margin: 5px;
 }
 .boxes {
     margin-bottom: 26px;
+    border-radius: 3px;
+    border-width: 1px;
 }
 .bloqueada {
     display: none;
@@ -15,15 +19,70 @@ body {
     height: 40px;
     font-size: 17px;
     width: auto;
+    text-align: center;
 }
-.img {
-    width: 85%;
-}
+
 .esc {
     display: none;
 }
 .local {
     margin-bottom: 14px;
+    border-radius: 5px;
+}
+.pronto {
+    height: 30px;
+    width: 50px;
+}
+
+#grupodiv{
+    position: relative;
+}
+#grupodiv img {
+    width: 95%;
+}
+#grupodiv .name1 {
+    position: absolute;
+    color: rgb(235, 141, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    bottom: 19vw;
+    left: 4vw;
+    font-weight: bold;
+    font-size: 2.3vw;
+}
+#grupodiv .cargo1 {
+    position: absolute;
+    bottom: 17vw;
+    left: 4vw;
+    font-size: 1.4vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#grupodiv .telefone1 {
+    position: absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    bottom: 14.2vw;
+    left: 3.7vw;
+    font-size: 2vw;
+    
+}
+#grupodiv .mail1 {
+    position: absolute;
+    font-size: 1.3vw;
+    bottom: 12vw;
+    left: 3.7vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 29vw;
+}
+#grupodiv .localizacao1{
+    position: absolute;
+    bottom: 9.2vw;
+    left: 41.6vw;
+    text-align: center;
+    color: rgb(235, 235, 235);
+    font-size: 1.3vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 22.4vw;
+    height: 4vw;
+    text-align: left;
 }
 
 
@@ -156,18 +215,20 @@ body {
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+
 #asfaltosdiv {
     position: relative;
     margin: auto;
 }
 #asfaltosdiv img{
     padding-top: 14px;
-    width: 87.5%;
+    width: 95%;
 }
 #asfaltosdiv .name1 {
     position: absolute;
-    bottom: 14.4vw;
-    left: 3.6vw;
+    bottom: 18.6vw;
+    left: 3.9vw;
     text-align: center;
     color: rgb(235, 141, 0);
     font-size: 2.7vw;
@@ -176,17 +237,17 @@ body {
 }
 #asfaltosdiv .cargo1 {
     position: absolute;
-    bottom: 13vw;
-    left: 3.9vw;
+    bottom: 16.2vw;
+    left: 4vw;
     text-align: center;
     color: rgb(0, 0, 0);
-    font-size: 1.7vw;
+    font-size: 1.5vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #asfaltosdiv .telefone1 {
     position: absolute;
-    bottom: 10.4vw;
-    left: 3.5vw;
+    bottom: 13.7vw;
+    left: 3.9vw;
     text-align: center;
     color: rgb(0, 0, 0);
     font-size: 1.7vw;
@@ -194,22 +255,21 @@ body {
 }
 #asfaltosdiv .mail1 {
     position: absolute;
-    bottom: 8vw;
+    bottom: 11.2vw;
     left: 3.9vw;
     text-align: center;
     color: rgb(0, 0, 0);
-    font-size: 1.7vw;
+    font-size: 1.3vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #asfaltosdiv .localizacao1 {
     position: absolute;
-    bottom: 6.7vw;
-    left: 38.1vw;
+    bottom: 9vw;
+    left: 41.6vw;
     text-align: center;
     color: rgb(235, 235, 235);
     font-size: 1.3vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
     width: 22.4vw;
     height: 4vw;
     text-align: left;

@@ -12,8 +12,6 @@
     <h1 style="text-align: center;">Assinaturas</h1>
     <!-- Div das informações e da seleção de localização-->
     <div class="caixas">
-        <fieldset>
-            <legend>Dados</legend>
         Nome: <input type="text" name="nome" id="nome" class="boxes"><br>
         Cargo: <input type="text" name="funcao" id="funcao" class="boxes"><br>
         Email: <input type="email" name="email" id="email"class="boxes" placeholder="nome.sobrenome"><br>
@@ -25,21 +23,29 @@
                     <option value="4" class="location">Teresina</option>
                     <option value="5" class="location">Bom Jesus</option>
                 </select><br>
-        </fieldset>
     </div>
     <!--Div das seleções das empresas e botão-->
         <div class="igual">
         <select class="escolher" name="escolher" id="empre" onchange="empresa()">
-            <option value="1" class="emp" name="emp">Agro</option>
-            <option value="2" class="emp" name="emp">Daf</option>
-            <option value="3" class="emp" name="emp">Asfaltos</option>
-            <option value="4" class="emp" name="emp">Engelog</option>
-            <option value="5" class="emp" name="emp">pavimentos</option>
+            <option value="1" class="emp" name="emp">grupo</option>
+            <option value="2" class="emp" name="emp">Agro</option>
+            <option value="3" class="emp" name="emp">Daf</option>
+            <option value="4" class="emp" name="emp">Asfaltos</option>
+            <option value="5" class="emp" name="emp">Engelog</option>
+            <option value="6" class="emp" name="emp">pavimentos</option>
         </select>
-        <input type="submit" value="Pronto" onclick="clicar()">
+        <input type="submit" value="Pronto" onclick="clicar()" class="pronto">
         </div>
     <!--Div das imagens e informações-->
         <div>
+            <div id="grupodiv" class="esc">
+                <img class="img" id="grupo" src="imagens/grupo.png">
+                <p id="namegrp" class="name1"></p>
+                <p id="cargogrp" class="cargo1"></p>
+                <p id="mailgrp" class="mail1"></p>
+                <p id="telefonegrp" class="telefone1"></p>
+                <p id="localizacaogrp" class="localizacao1"></p>
+        </div>
         <div id="agrodiv" class="esc">
             <img class="img" id="agro" src="imagens/agro 1.jpg">
             <p id="nameagr" class="name1"></p>

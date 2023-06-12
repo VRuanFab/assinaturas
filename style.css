@@ -32,12 +32,12 @@ body {
     margin: auto;
 }
 #agrodiv img{
-    image-rendering: inherit;
+    width: 78%;
 }
 #agrodiv .name1 {
     position: absolute;
-    bottom: 70%;
-    left: 42.8%;
+    bottom: 18.7vw;
+    left: 38.3vw;
     text-align: center;
     color: #25427A;
     font-size: 3vw;
@@ -49,41 +49,18 @@ body {
 }
 #agrodiv .cargo1 {
     position: absolute;
-    bottom: 68%;
-    left: 42.8%;
+    bottom: 18.1vw;
+    left: 38.4vw;
     text-align: center;
     color: #25427A;
     font-size: 1.6vw;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    line-height: 12px;
-    text-align: justify;
-}
-#agrodiv .mail1 {
-    position: absolute;
-    bottom: 18%;
-    left: 49%;
-    text-align: center;
-    color: #25427A;
-    font-size: 160%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bolder;
-    text-align: justify;
-}
-#agrodiv .telefone1 {
-    position: absolute;
-    bottom: 15%;
-    left: 83.7%;
-    text-align: center;
-    color: #25427A;
-    font-size: 157%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: justify;
 }
 #agrodiv .localizacao1 {
     position: absolute;
-    bottom: 11.5%;
-    left: 42.5%;
-    text-align: left;
+    bottom: 2.7vw;
+    left: 38.2vw;
     color: #25427A;
     font-size: 1.6vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -97,10 +74,10 @@ body {
 .padcep {
     position: absolute;
     color: #25427A;
-    font-size: 1.9vw;
+    font-size: 1.8vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    left: 78%;
-    bottom: 24%;
+    left: 71.8vw;
+    bottom: 6.5vw;
     display: flex;
 }
 #agrodiv .cep1 {
@@ -108,16 +85,26 @@ body {
     font-size: 1.8vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     position: absolute;
-    bottom: 24.5%;
-    left: 83.8%;
+    bottom: 6.5vw;
+    left: 77vw;
 }
 #agrodiv .tel {
     position: absolute;
-    font-size: 1.8vw;
+    font-size: 1.9vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #25427A;
-    left: 73.3%;
-    bottom: 15%;
+    left: 71.8vw;
+    bottom: 3.7vw;
+}
+#agrodiv .telefone1 {
+    position: absolute;
+    bottom: 3.9vw;
+    left: 77vw;
+    text-align: center;
+    color: #25427A;
+    font-size: 1.8vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 17%;
 }
 
 #dafdiv {
@@ -125,85 +112,105 @@ body {
     margin: auto;
 }
 #dafdiv img {
-    width: 93%;
+    width: 92%;
 }
 #dafdiv .name1 {
     position: absolute;
-    bottom: 76%;
-    left: 46%;
-    text-align: center;
-    color: orange;
-    font-size: 200%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    bottom: 23.9vw;
+    left: 45vw;
+    color: black;
+    font-size: 3vw;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bolder;
 }
 #dafdiv .cargo1 {
     position: absolute;
-    bottom: 70%;
-    left: 46%;
+    bottom: 23.2vw;
+    left: 45vw;
     text-align: center;
-    color: #25427A;
-    font-size: 1.5vw;
+    color: black;
+    font-size: 1.7vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 12px;
 }
-
-
-
+#dafdiv .mail1{
+    position: absolute;
+    bottom: 20vw;
+    left: 45vw;
+    font-size: 1.7vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#dafdiv .localizacao1 {
+    position: absolute;
+    bottom: 8.8vw;
+    left: 45vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.4vw;
+    width: 32vw;
+}
+#dafdiv .telefone1 {
+    position: absolute;
+    bottom: 2.8vw;
+    left: 45vw;
+    font-size: 2.4vw;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 #asfaltosdiv {
     position: relative;
     margin: auto;
 }
 #asfaltosdiv img{
     padding-top: 14px;
+    width: 87.5%;
 }
 #asfaltosdiv .name1 {
     position: absolute;
-    bottom: 52%;
-    left: 4.5%;
+    bottom: 14.4vw;
+    left: 3.6vw;
     text-align: center;
-    color: rgb(241, 160, 7);
-    font-size: 246%;
+    color: rgb(235, 141, 0);
+    font-size: 2.7vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bolder;
+    font-weight: bold;
 }
 #asfaltosdiv .cargo1 {
     position: absolute;
-    bottom: 45%;
-    left: 4.5%;
+    bottom: 13vw;
+    left: 3.9vw;
     text-align: center;
-    color: rgb(241, 160, 7);
-    font-size: 162%;
+    color: rgb(0, 0, 0);
+    font-size: 1.7vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bolder;
 }
 #asfaltosdiv .telefone1 {
     position: absolute;
-    bottom: 35%;
-    left: 4.5%;
+    bottom: 10.4vw;
+    left: 3.5vw;
     text-align: center;
-    color: rgb(241, 160, 7);
-    font-size: 162%;
+    color: rgb(0, 0, 0);
+    font-size: 1.7vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bolder;
 }
 #asfaltosdiv .mail1 {
     position: absolute;
-    bottom: 25%;
-    left: 4.5%;
+    bottom: 8vw;
+    left: 3.9vw;
     text-align: center;
-    color: rgb(241, 160, 7);
-    font-size: 162%;
+    color: rgb(0, 0, 0);
+    font-size: 1.7vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bolder;
 }
 #asfaltosdiv .localizacao1 {
     position: absolute;
-    bottom: 30%;
-    left: 42.7%;
+    bottom: 6.7vw;
+    left: 38.1vw;
     text-align: center;
-    color: rgb(241, 160, 7);
-    font-size: 162%;
+    color: rgb(235, 235, 235);
+    font-size: 1.3vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bolder;
+    font-weight: bold;
+    width: 22.4vw;
+    height: 4vw;
+    text-align: left;
 }

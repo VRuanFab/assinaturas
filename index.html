@@ -10,11 +10,14 @@
 </head>
 <body>
     <h1 style="text-align: center;">Assinaturas</h1>
+    <!-- Div das informações e da seleção de localização-->
     <div class="caixas">
+        <fieldset>
+            <legend>Dados</legend>
         Nome: <input type="text" name="nome" id="nome" class="boxes"><br>
         Cargo: <input type="text" name="funcao" id="funcao" class="boxes"><br>
         Email: <input type="email" name="email" id="email"class="boxes" placeholder="nome.sobrenome"><br>
-        telefone: <input type="number" name="numero" id="numero"class="boxes"><br>
+        telefone: <input type="tel" name="numero" id="numero" class="boxes" maxlength="11" onkeyup="formato()"><br>
         Endereço: <select name="local" id="localidade" class="local" onchange="localidade()">
                     <option value="1" class="location">Matriz</option>
                     <option value="2" class="location">São Luís</option>
@@ -22,9 +25,11 @@
                     <option value="4" class="location">Teresina</option>
                     <option value="5" class="location">Bom Jesus</option>
                 </select><br>
+        </fieldset>
     </div>
+    <!--Div das seleções das empresas e botão-->
         <div class="igual">
-        <select class="escolher" name="escolher" id="empre" onchange="empresa()" onchange="desable()">
+        <select class="escolher" name="escolher" id="empre" onchange="empresa()">
             <option value="1" class="emp" name="emp">Agro</option>
             <option value="2" class="emp" name="emp">Daf</option>
             <option value="3" class="emp" name="emp">Asfaltos</option>
@@ -33,7 +38,8 @@
         </select>
         <input type="submit" value="Pronto" onclick="clicar()">
         </div>
-    <div>
+    <!--Div das imagens e informações-->
+        <div>
         <div id="agrodiv" class="esc">
             <img class="img" id="agro" src="imagens/agro 1.jpg">
             <p id="nameagr" class="name1"></p>
@@ -43,7 +49,7 @@
             <p id="localizacaoagr" class="localizacao1"></p> 
             <p class="padcep"><strong>CEP:</strong></p>
             <p id="cep" class="cep1"></p>
-            <p class="tel"><strong>Telefone:</strong></p>
+            <p class="tel"><strong>TEL:</strong></p>
         </div>
         <div id="dafdiv" class="esc">
             <img class="img" id="daf" src="imagens/daf.jpg">

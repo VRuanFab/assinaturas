@@ -1,5 +1,6 @@
-   window.addEventListener('aberto', clicar())
+window.addEventListener('aberto', clicar())
     function clicar() {
+        //função do onchange principal das empresas
         function empresa() {
             var empresas = document.querySelectorAll('.emp')
             let imagem = document.querySelectorAll('.esc')
@@ -13,6 +14,7 @@
                     info(0);
                     localidade();
                     bloquear();
+                    formato();
         
                 } else if (empresas[1].selected) {
                     //daf
@@ -59,8 +61,11 @@
                     desbloquear();
                 }
         }
+
+        //chamada da função acima
         empresa();
 
+        //função que exibe as informações escritas
         function info(n) {
             if (n == 0) {
                     var nome = document.getElementById('nome').value;
@@ -70,6 +75,7 @@
                     document.getElementById('cargoagr').innerHTML = funcao
     
                     var number = document.getElementById('numero').value;
+                    number = number.replace(/(\d{2})(\d{1})(\d{4})(\d{4})/, '($1) $2 $3-$4');
                     document.getElementById('telefoneagr').innerHTML = number
 
             } else if (n == 1) {
@@ -83,6 +89,7 @@
                     document.getElementById('maildaf').innerHTML = email
         
                     var number = document.getElementById('numero').value;
+                    number = number.replace(/(\d{2})(\d{1})(\d{4})(\d{4})/, '($1) $2 $3-$4');
                     document.getElementById('telefonedaf').innerHTML = number
         
             } else if (n == 2) {
@@ -96,6 +103,7 @@
                     document.getElementById('mailasf').innerHTML = email
         
                     var number = document.getElementById('numero').value;
+                    number = number.replace(/(\d{2})(\d{1})(\d{4})(\d{4})/, '($1) $2 $3-$4');
                     document.getElementById('telefoneasf').innerHTML = number
         
             } else if (n == 3) {
@@ -109,6 +117,7 @@
                     document.getElementById('maileng').innerHTML = email
                 
                     var number = document.getElementById('numero').value;
+                    number = number.replace(/(\d{2})(\d{1})(\d{4})(\d{4})/, '($1) $2 $3-$4');
                     document.getElementById('telefoneeng').innerHTML = number
                 
             } else if (n == 4) {
@@ -122,11 +131,13 @@
                     document.getElementById('mailpav').innerHTML = email
         
                     var number = document.getElementById('numero').value;
+                    number = number.replace(/(\d{2})(\d{1})(\d{4})(\d{4})/, '($1) $2 $3-$4');
                     document.getElementById('telefonepav').innerHTML = number
         
                 }
-            } //função que vai chamar as informações de estilos diferentes
+            }
 
+        //exibe as localidades também na função de onchange
         function localidade() {
             var localizacao = document.querySelectorAll('.location')
             if (localizacao[0].selected) {
@@ -135,13 +146,14 @@
                 enderecos(1)
         }   else if (localizacao[2].selected) {
                 enderecos(2);
-        } else if (localizacao[3].selected) {
+        }   else if (localizacao[3].selected) {
                 enderecos(3);
-        } else if (localizacao[4].selected) {
+        }   else if (localizacao[4].selected) {
                 enderecos(4);
         }
         }
 
+        //descreve qual empresa é para a função localidade
         function enderecos(base) {
             if (base == 0) {
             document.getElementById('localizacaoagr').innerHTML = "Rodovia BR 116, 2524 - Km 65 - Cajazeiras, Fortaleza - CE"
@@ -157,21 +169,21 @@
             document.getElementById('localizacaoasf').innerHTML = "Avenida Engenheiro Emiliano Macieira, 100 - Tibiri, São Luís - MA"
             document.getElementById('localizacaoeng').innerHTML = "Avenida Engenheiro Emiliano Macieira, 100 - Tibiri, São Luís - MA"
             document.getElementById('localizacaopav').innerHTML = "Avenida Engenheiro Emiliano Macieira, 100 - Tibiri, São Luís - MA"
-        } else if(base == 2) {
+        }   else if(base == 2) {
             document.getElementById('localizacaoagr').innerHTML = "Rua Dom Nivaldo Monte, 103 - Emaús, Parnamirim - RN"
             document.getElementById('cep').innerHTML = "59149-070"
             document.getElementById('localizacaodaf').innerHTML = "Rua Dom Nivaldo Monte, 103 - Emaús, Parnamirim - RN"
             document.getElementById('localizacaoasf').innerHTML = "Rua Dom Nivaldo Monte, 103 - Emaús, Parnamirim - RN"
             document.getElementById('localizacaoeng').innerHTML = "Rua Dom Nivaldo Monte, 103 - Emaús, Parnamirim - RN"
             document.getElementById('localizacaopav').innerHTML = "Rua Dom Nivaldo Monte, 103 - Emaús, Parnamirim - RN"
-        } else if(base == 3) {
+        }   else if(base == 3) {
             document.getElementById('localizacaoagr').innerHTML = "Avenida Prefeito Wall Ferraz, 9247 - Lourival Parente, Teresina - PI"
             document.getElementById('cep').innerHTML = "64022-800"
             document.getElementById('localizacaodaf').innerHTML = "Avenida Prefeito Wall Ferraz, 9247 - Lourival Parente, Teresina - PI"
             document.getElementById('localizacaoasf').innerHTML = "Avenida Prefeito Wall Ferraz, 9247 - Lourival Parente, Teresina - PI"
             document.getElementById('localizacaoeng').innerHTML = "Avenida Prefeito Wall Ferraz, 9247 - Lourival Parente, Teresina - PI"
             document.getElementById('localizacaopav').innerHTML = "Avenida Prefeito Wall Ferraz, 9247 - Lourival Parente, Teresina - PI"
-        } else if(base == 4) {
+        }   else if(base == 4) {
             document.getElementById('localizacaoagr').innerHTML = "Avenida Ademar Diogenes, 583 - BR 135, KM 349 - São Pedro, Bom Jesus - PI"
             document.getElementById('cep').innerHTML = "64900-000"
             document.getElementById('localizacaodaf').innerHTML = "Avenida Ademar Diogenes, 583 - BR 135, KM 349 - São Pedro, Bom Jesus - PI"
@@ -181,10 +193,13 @@
         }
     }
     }
+
+    //bloqueia o email da assinatura agro (na qual não usa email)
     function bloquear() {
         let emailbloq = document.getElementById('email')
             emailbloq.disabled = true;
     }
+    //desbloqueia o email da assinatura agro (para o uso das outras empresas)
     function desbloquear() {
         let emailbloq = document.getElementById('email')
             emailbloq.disabled = false;

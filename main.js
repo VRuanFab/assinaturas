@@ -11,52 +11,71 @@ window.addEventListener('aberto', clicar())
                     imagem[2].style.display = "none";
                     imagem[3].style.display = "none";
                     imagem[4].style.display = "none";
+                    imagem[4].style.display = "none";
+                    imagem[5].style.display = "none";
                     info(0);
                     localidade();
-                    bloquear();
+                    desbloquear()
                     formato();
         
                 } else if (empresas[1].selected) {
-                    //daf
+                    //agro
                     imagem[1].style.display = "block";
                     imagem[0].style.display = "none";
                     imagem[2].style.display = "none";
                     imagem[3].style.display = "none";
                     imagem[4].style.display = "none";
+                    imagem[5].style.display = "none";
                     info(1);
                     localidade();
-                    desbloquear();
-                    
+                    bloquear();
+                    formato();
+        
                 } else if (empresas[2].selected) {
-                    //asf
+                    //daf
                     imagem[2].style.display = "block";
                     imagem[0].style.display = "none";
                     imagem[1].style.display = "none";
                     imagem[3].style.display = "none";
                     imagem[4].style.display = "none";
+                    imagem[5].style.display = "none";
                     info(2);
                     localidade();
                     desbloquear();
-        
+                    
                 } else if (empresas[3].selected) {
-                    //eng
+                    //asf
                     imagem[3].style.display = "block";
                     imagem[0].style.display = "none";
                     imagem[1].style.display = "none";
                     imagem[2].style.display = "none";
                     imagem[4].style.display = "none";
+                    imagem[5].style.display = "none";
                     info(3);
                     localidade();
                     desbloquear();
-
+        
                 } else if (empresas[4].selected) {
-                    //pav
+                    //eng
                     imagem[4].style.display = "block";
                     imagem[0].style.display = "none";
                     imagem[1].style.display = "none";
                     imagem[2].style.display = "none";
                     imagem[3].style.display = "none";
+                    imagem[5].style.display = "none";
                     info(4);
+                    localidade();
+                    desbloquear();
+
+                } else if (empresas[5].selected) {
+                    //pav
+                    imagem[5].style.display = "block";
+                    imagem[0].style.display = "none";
+                    imagem[1].style.display = "none";
+                    imagem[2].style.display = "none";
+                    imagem[3].style.display = "none";
+                    imagem[4].style.display = "none";
+                    info(5);
                     localidade();
                     desbloquear();
                 }
@@ -68,31 +87,46 @@ window.addEventListener('aberto', clicar())
         //função que exibe as informações escritas
         function info(n) {
             if (n == 0) {
-                    var nome = document.getElementById('nome').value;
-                    document.getElementById('nameagr').innerHTML = nome
-    
-                    var funcao = document.getElementById('funcao').value;
-                    document.getElementById('cargoagr').innerHTML = funcao
-    
-                    var number = document.getElementById('numero').value;
-                    number = number.replace(/(\d{2})(\d{1})(\d{4})(\d{4})/, '($1) $2 $3-$4');
-                    document.getElementById('telefoneagr').innerHTML = number
+                var nome = document.getElementById('nome').value;
+                document.getElementById('namegrp').innerHTML = nome
+        
+                var funcao = document.getElementById('funcao').value;
+                document.getElementById('cargogrp').innerHTML = funcao
+        
+                var email = document.getElementById('email').value;
+                document.getElementById('mailgrp').innerHTML = email + "@grupofornecedora.com.br"
+        
+                var number = document.getElementById('numero').value;
+                number = number.replace(/(\d{2})(\d{1})(\d{4})(\d{4})/, '($1) $2 $3-$4');
+                document.getElementById('telefonegrp').innerHTML = number
 
-            } else if (n == 1) {
-                    var nome = document.getElementById('nome').value;
-                    document.getElementById('namedaf').innerHTML = nome
+            } 
+            if (n == 1) {
+                var nome = document.getElementById('nome').value;
+                document.getElementById('nameagr').innerHTML = nome
+
+                var funcao = document.getElementById('funcao').value;
+                document.getElementById('cargoagr').innerHTML = funcao
+
+                var number = document.getElementById('numero').value;
+                number = number.replace(/(\d{2})(\d{1})(\d{4})(\d{4})/, '($1) $2 $3-$4');
+                document.getElementById('telefoneagr').innerHTML = number
+
+            }else if (n == 2) {
+                var nome = document.getElementById('nome').value;
+                document.getElementById('namedaf').innerHTML = nome
         
-                    var funcao = document.getElementById('funcao').value;
-                    document.getElementById('cargodaf').innerHTML = funcao
+                var funcao = document.getElementById('funcao').value;
+                document.getElementById('cargodaf').innerHTML = funcao
         
-                    var email = document.getElementById('email').value;
-                    document.getElementById('maildaf').innerHTML = email
+                var email = document.getElementById('email').value;
+                document.getElementById('maildaf').innerHTML = email + "@fornecedoracaminhoes.com.br"
         
-                    var number = document.getElementById('numero').value;
-                    number = number.replace(/(\d{2})(\d{1})(\d{4})(\d{4})/, '($1) $2 $3-$4');
-                    document.getElementById('telefonedaf').innerHTML = number
+                var number = document.getElementById('numero').value;
+                number = number.replace(/(\d{2})(\d{1})(\d{4})(\d{4})/, '($1) $2 $3-$4');
+                document.getElementById('telefonedaf').innerHTML = number
         
-            } else if (n == 2) {
+            } else if (n == 3) {
                     var nome = document.getElementById('nome').value;
                     document.getElementById('nameasf').innerHTML = nome
         
@@ -100,13 +134,13 @@ window.addEventListener('aberto', clicar())
                     document.getElementById('cargoasf').innerHTML = funcao
         
                     var email = document.getElementById('email').value;
-                    document.getElementById('mailasf').innerHTML = email
+                    document.getElementById('mailasf').innerHTML = email + "@fornecedoraasfaltos.com.br"
         
                     var number = document.getElementById('numero').value;
                     number = number.replace(/(\d{2})(\d{1})(\d{4})(\d{4})/, '($1) $2 $3-$4');
                     document.getElementById('telefoneasf').innerHTML = number
         
-            } else if (n == 3) {
+            } else if (n == 4) {
                     var nome = document.getElementById('nome').value;
                     document.getElementById('nameeng').innerHTML = nome
                 
@@ -114,13 +148,13 @@ window.addEventListener('aberto', clicar())
                     document.getElementById('cargoeng').innerHTML = funcao
                 
                     var email = document.getElementById('email').value;
-                    document.getElementById('maileng').innerHTML = email
+                    document.getElementById('maileng').innerHTML = email + "@fornecedoraengelog.com.br"
                 
                     var number = document.getElementById('numero').value;
                     number = number.replace(/(\d{2})(\d{1})(\d{4})(\d{4})/, '($1) $2 $3-$4');
                     document.getElementById('telefoneeng').innerHTML = number
                 
-            } else if (n == 4) {
+            } else if (n == 5) {
                     var nome = document.getElementById('nome').value;
                     document.getElementById('namepav').innerHTML = nome
         
@@ -128,7 +162,7 @@ window.addEventListener('aberto', clicar())
                     document.getElementById('cargopav').innerHTML = funcao
         
                     var email = document.getElementById('email').value;
-                    document.getElementById('mailpav').innerHTML = email
+                    document.getElementById('mailpav').innerHTML = email + "@fornecedorapavimentos.com.br"
         
                     var number = document.getElementById('numero').value;
                     number = number.replace(/(\d{2})(\d{1})(\d{4})(\d{4})/, '($1) $2 $3-$4');
@@ -144,18 +178,21 @@ window.addEventListener('aberto', clicar())
                 enderecos(0);
         }   else if (localizacao[1].selected) {
                 enderecos(1)
-        }   else if (localizacao[2].selected) {
-                enderecos(2);
+        }    else if (localizacao[2].selected) {
+                enderecos(2) 
         }   else if (localizacao[3].selected) {
                 enderecos(3);
         }   else if (localizacao[4].selected) {
                 enderecos(4);
+        }   else if (localizacao[5].selected) {
+                enderecos(5);
         }
         }
 
         //descreve qual empresa é para a função localidade
         function enderecos(base) {
             if (base == 0) {
+            document.getElementById('localizacaogrp').innerHTML = "Rodovia BR 116, 2524 - Km 65 - Cajazeiras, Fortaleza - CE"
             document.getElementById('localizacaoagr').innerHTML = "Rodovia BR 116, 2524 - Km 65 - Cajazeiras, Fortaleza - CE"
             document.getElementById('cep').innerHTML = "60864-440"
             document.getElementById('localizacaodaf').innerHTML = "Rodovia BR 116, 2524 - Km 65 - Cajazeiras, Fortaleza - CE"
@@ -163,6 +200,7 @@ window.addEventListener('aberto', clicar())
             document.getElementById('localizacaoeng').innerHTML = "Rodovia BR 116, 2524 - Km 65 - Cajazeiras, Fortaleza - CE"
             document.getElementById('localizacaopav').innerHTML = "Rodovia BR 116, 2524 - Km 65 - Cajazeiras, Fortaleza - CE"
         }   else if(base == 1) {
+            document.getElementById('localizacaogrp').innerHTML = "Avenida Engenheiro Emiliano Macieira, 100 - Tibiri, São Luís - MA"
             document.getElementById('localizacaoagr').innerHTML = "Avenida Engenheiro Emiliano Macieira, 100 - Tibiri, São Luís - MA"
             document.getElementById('cep').innerHTML = "65095-601"
             document.getElementById('localizacaodaf').innerHTML = "Avenida Engenheiro Emiliano Macieira, 100 - Tibiri, São Luís - MA"
@@ -170,6 +208,7 @@ window.addEventListener('aberto', clicar())
             document.getElementById('localizacaoeng').innerHTML = "Avenida Engenheiro Emiliano Macieira, 100 - Tibiri, São Luís - MA"
             document.getElementById('localizacaopav').innerHTML = "Avenida Engenheiro Emiliano Macieira, 100 - Tibiri, São Luís - MA"
         }   else if(base == 2) {
+            document.getElementById('localizacaogrp').innerHTML = "Rua Dom Nivaldo Monte, 103 - Emaús, Parnamirim - RN"
             document.getElementById('localizacaoagr').innerHTML = "Rua Dom Nivaldo Monte, 103 - Emaús, Parnamirim - RN"
             document.getElementById('cep').innerHTML = "59149-070"
             document.getElementById('localizacaodaf').innerHTML = "Rua Dom Nivaldo Monte, 103 - Emaús, Parnamirim - RN"
@@ -177,6 +216,7 @@ window.addEventListener('aberto', clicar())
             document.getElementById('localizacaoeng').innerHTML = "Rua Dom Nivaldo Monte, 103 - Emaús, Parnamirim - RN"
             document.getElementById('localizacaopav').innerHTML = "Rua Dom Nivaldo Monte, 103 - Emaús, Parnamirim - RN"
         }   else if(base == 3) {
+            document.getElementById('localizacaogrp').innerHTML = "Avenida Prefeito Wall Ferraz, 9247 - Lourival Parente, Teresina - PI"
             document.getElementById('localizacaoagr').innerHTML = "Avenida Prefeito Wall Ferraz, 9247 - Lourival Parente, Teresina - PI"
             document.getElementById('cep').innerHTML = "64022-800"
             document.getElementById('localizacaodaf').innerHTML = "Avenida Prefeito Wall Ferraz, 9247 - Lourival Parente, Teresina - PI"
@@ -184,6 +224,7 @@ window.addEventListener('aberto', clicar())
             document.getElementById('localizacaoeng').innerHTML = "Avenida Prefeito Wall Ferraz, 9247 - Lourival Parente, Teresina - PI"
             document.getElementById('localizacaopav').innerHTML = "Avenida Prefeito Wall Ferraz, 9247 - Lourival Parente, Teresina - PI"
         }   else if(base == 4) {
+            document.getElementById('localizacaogrp').innerHTML = "Avenida Ademar Diogenes, 583 - BR 135, KM 349 - São Pedro, Bom Jesus - PI"
             document.getElementById('localizacaoagr').innerHTML = "Avenida Ademar Diogenes, 583 - BR 135, KM 349 - São Pedro, Bom Jesus - PI"
             document.getElementById('cep').innerHTML = "64900-000"
             document.getElementById('localizacaodaf').innerHTML = "Avenida Ademar Diogenes, 583 - BR 135, KM 349 - São Pedro, Bom Jesus - PI"

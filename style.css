@@ -10,6 +10,7 @@
     margin-bottom: 26px;
     border-radius: 3px;
     border-width: 1px;
+    text-align: right, 60px;
 }
 .bloqueada {
     display: none;
@@ -19,26 +20,31 @@
     height: 40px;
     font-size: 17px;
     width: auto;
-    text-align: center;
+    outline: none;
 }
 
 .esc {
     display: none;
 }
 .local {
-    margin-bottom: 14px;
-    border-radius: 5px;
+    margin-bottom: 19px;
+    height: 28px;
+    width:105px;
+    border-radius: 3px;
+    outline: none;
 }
 .pronto {
-    height: 30px;
-    width: 50px;
+    height: 40px;
+    width: 70px;
+    cursor: pointer;
+    border-radius: 3px;
 }
 
 #grupodiv{
     position: relative;
 }
 #grupodiv img {
-    width: 95%;
+    width: 94.2vw
 }
 #grupodiv .name1 {
     position: absolute;
@@ -91,11 +97,11 @@
     margin: auto;
 }
 #agrodiv img{
-    width: 78%;
+    width: 77vw
 }
 #agrodiv .name1 {
     position: absolute;
-    bottom: 18.7vw;
+    bottom: 21.7vw;
     left: 38.3vw;
     text-align: center;
     color: #25427A;
@@ -108,7 +114,7 @@
 }
 #agrodiv .cargo1 {
     position: absolute;
-    bottom: 18.1vw;
+    bottom: 20.1vw;
     left: 38.4vw;
     text-align: center;
     color: #25427A;
@@ -166,16 +172,17 @@
     width: 17%;
 }
 
+
 #dafdiv {
     position: relative;
     margin: auto;
 }
 #dafdiv img {
-    width: 92%;
+    width: 90vw;
 }
 #dafdiv .name1 {
     position: absolute;
-    bottom: 23.9vw;
+    bottom: 26.2vw;
     left: 45vw;
     color: black;
     font-size: 3vw;
@@ -184,7 +191,7 @@
 }
 #dafdiv .cargo1 {
     position: absolute;
-    bottom: 23.2vw;
+    bottom: 24.4vw;
     left: 45vw;
     text-align: center;
     color: black;
@@ -194,14 +201,14 @@
 }
 #dafdiv .mail1{
     position: absolute;
-    bottom: 20vw;
+    bottom: 21.3vw;
     left: 45vw;
     font-size: 1.7vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #dafdiv .localizacao1 {
     position: absolute;
-    bottom: 8.8vw;
+    bottom: 9.9vw;
     left: 45vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2.4vw;
@@ -209,8 +216,8 @@
 }
 #dafdiv .telefone1 {
     position: absolute;
-    bottom: 2.8vw;
-    left: 45vw;
+    bottom: 5.2vw;
+    left: 44.6vw;
     font-size: 2.4vw;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -223,7 +230,7 @@
 }
 #asfaltosdiv img{
     padding-top: 14px;
-    width: 95%;
+    width: 93.5vw;
 }
 #asfaltosdiv .name1 {
     position: absolute;

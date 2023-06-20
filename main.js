@@ -100,6 +100,14 @@ window.addEventListener('aberto', clicar())
                 number = number.replace(/(\d{2})(\d{1})(\d{4})(\d{4})/, '($1) $2 $3-$4');
                 document.getElementById('telefonegrp').innerHTML = number
 
+                
+                if (nome.value === ""){
+                    
+                }else {
+                    var GoogleChartAPI = `https://chart.googleapis.com/chart?cht=qr&chs=500x500&chl=${nome}${email}${number}`
+                document.getElementById('QRCodeImage').src = GoogleChartAPI;
+                }
+
             } 
             if (n == 1) {
                 var nome = document.getElementById('nome').value;
@@ -125,6 +133,9 @@ window.addEventListener('aberto', clicar())
                 var number = document.getElementById('numero').value;
                 number = number.replace(/(\d{2})(\d{1})(\d{4})(\d{4})/, '($1) $2 $3-$4');
                 document.getElementById('telefonedaf').innerHTML = number
+
+                var GoogleChartAPI = `https://chart.googleapis.com/chart?cht=qr&chs=500x500&chl=${nome}${email}${number}`
+                document.getElementById('QRCodeImage').src = GoogleChartAPI;
         
             } else if (n == 3) {
                     var nome = document.getElementById('nome').value;
@@ -139,6 +150,9 @@ window.addEventListener('aberto', clicar())
                     var number = document.getElementById('numero').value;
                     number = number.replace(/(\d{2})(\d{1})(\d{4})(\d{4})/, '($1) $2 $3-$4');
                     document.getElementById('telefoneasf').innerHTML = number
+
+                    var GoogleChartAPI = `https://chart.googleapis.com/chart?cht=qr&chs=500x500&chl=${nome}${email}${number}`
+                document.getElementById('QRCodeImage').src = GoogleChartAPI;
         
             } else if (n == 4) {
                     var nome = document.getElementById('nome').value;
@@ -153,6 +167,9 @@ window.addEventListener('aberto', clicar())
                     var number = document.getElementById('numero').value;
                     number = number.replace(/(\d{2})(\d{1})(\d{4})(\d{4})/, '($1) $2 $3-$4');
                     document.getElementById('telefoneeng').innerHTML = number
+
+                    var GoogleChartAPI = `https://chart.googleapis.com/chart?cht=qr&chs=500x500&chl=${nome}${email}${number}`
+                    document.getElementById('QRCodeImage').src = GoogleChartAPI;
                 
             } else if (n == 5) {
                     var nome = document.getElementById('nome').value;
@@ -167,7 +184,9 @@ window.addEventListener('aberto', clicar())
                     var number = document.getElementById('numero').value;
                     number = number.replace(/(\d{2})(\d{1})(\d{4})(\d{4})/, '($1) $2 $3-$4');
                     document.getElementById('telefonepav').innerHTML = number
-        
+
+                    var GoogleChartAPI = `https://chart.googleapis.com/chart?cht=qr&chs=500x500&chl=${nome}${email}${number}`
+                    document.getElementById('QRCodeImage').src = GoogleChartAPI;
                 }
             }
 

@@ -48,6 +48,7 @@
     background-color: rgb(199, 199, 199);
 }
 
+
 #grupodiv{
     position: relative;
 }
@@ -98,6 +99,11 @@
     height: 4vw;
     text-align: left;
 }
+#QRCodeImagegrp {
+    position: absolute;
+    left: 73vw;
+    bottom: 9.2vw;
+}
 
 
 #agrodiv {
@@ -132,14 +138,13 @@
 }
 #agrodiv .localizacao1 {
     position: absolute;
-    bottom: 2.7vw;
+    bottom: 4.2vw;
     left: 38.2vw;
     color: #25427A;
     font-size: 1.6vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 35px;
-    width: 31.5%;
-    height: 21%;
+    width: 29vw;
     word-wrap: break-word;
     text-align: auto;
     display: flex;
@@ -216,11 +221,11 @@
 }
 #dafdiv .localizacao1 {
     position: absolute;
-    bottom: 11vw;
+    bottom: 9.2vw;
     left: 45vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2.4vw;
-    width: 33vw;
+    width: 32vw;
 }
 #dafdiv .telefone1 {
     position: absolute;
@@ -229,6 +234,11 @@
     font-size: 2.4vw;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#QRCodeImagedaf {
+    position: absolute;
+    left: 77vw;
+    bottom: 3.2vw;
 }
 
 
@@ -289,6 +299,11 @@
     height: 4vw;
     text-align: left;
 }
+#QRCodeImageasf {
+    position: absolute;
+    left: 73vw;
+    bottom: 8vw;
+}
 
 
 #engelog {
@@ -342,6 +357,11 @@
     max-width: 22.4vw;
     height: 4vw;
     text-align: left;
+}
+#QRCodeImageeng {
+    position: absolute;
+    left: 73vw;
+    bottom: 8vw;
 }
 
 
@@ -397,4 +417,9 @@
     max-width: 22.4vw;
     height: 4vw;
     text-align: left;
+}
+#QRCodeImagepav {
+    position: absolute;
+    left: 73vw;
+    bottom: 8vw;
 }

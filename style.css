@@ -47,324 +47,303 @@
 .pronto:hover{
     background-color: rgb(199, 199, 199);
 }
+.containerramal{
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+}
 
 
+.containergrp{
+    position: absolute;
+    bottom: 9.6vw;
+    left: 3.4vw;
+    margin: 0.3vmax;
+    display: grid;
+    gap: 1vmax;
+    text-align: left;
+}
 #grupodiv{
     position: relative;
 }
 #grupodiv img {
-    width: 94.2vw
+    width: 94.2vmax
 }
 #grupodiv .name1 {
-    position: absolute;
     color: rgb(235, 141, 0);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    bottom: 19vw;
-    left: 4vw;
     font-weight: bold;
     font-size: 2.3vw;
 }
 #grupodiv .cargo1 {
-    position: absolute;
-    bottom: 17vw;
-    left: 4vw;
     font-size: 1.4vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #grupodiv .telefone1 {
-    position: absolute;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    bottom: 14.2vw;
-    left: 3.7vw;
     font-size: 2vw;
-    
 }
 #grupodiv .mail1 {
-    position: absolute;
     font-size: 1.3vw;
-    bottom: 12vw;
-    left: 3.7vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     max-width: 29vw;
 }
 #grupodiv .localizacao1{
     position: absolute;
-    bottom: 9.2vw;
-    left: 41.6vw;
+    bottom: 9.2vmax;
+    left: 41.6vmax;
     text-align: center;
     color: rgb(235, 235, 235);
     font-size: 1.3vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 22.4vw;
-    height: 4vw;
+    width: 22.4vmax;
+    height: 4vmax;
     text-align: left;
 }
 #QRCodeImagegrp {
     position: absolute;
-    left: 73vw;
-    bottom: 9.2vw;
+    left: 75vmax;
+    bottom: 9vmax;
+    max-width: 16vw;
+    max-height: 16vw;
 }
 
 
+.containeragr1{
+    display: grid;
+    position: absolute;
+    gap: 0.2vmax;
+    bottom: 19.2vmax;
+    left: 38.3vmax;
+    text-align: left;
+}
+.containeragr2{
+    display: flex;
+    gap: 0.4vmax;
+    position: absolute;
+    left: 71.7vmax;
+    bottom: 10vmax;
+}
+.containeragr3{
+    display: flex;
+    position: absolute;
+    left: 71.7vmax;
+    bottom: 7vmax;
+    gap: 0.3vmax;
+}
 #agrodiv {
     position: relative;
     margin: auto;
 }
 #agrodiv img{
-    width: 77vw
+    width: 77vmax;
 }
 #agrodiv .name1 {
-    position: absolute;
-    bottom: 21.7vw;
-    left: 38.3vw;
-    text-align: center;
     color: #25427A;
     font-size: 3vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bolder;
-    text-align: justify;
-    display: flex;
-    justify-content: space-around;
 }
 #agrodiv .cargo1 {
-    position: absolute;
-    bottom: 20.1vw;
-    left: 38.4vw;
-    text-align: center;
     color: #25427A;
     font-size: 1.6vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: justify;
 }
 #agrodiv .localizacao1 {
     position: absolute;
-    bottom: 4.2vw;
-    left: 38.2vw;
+    bottom: 4.2vmax;
+    left: 38.2vmax;
     color: #25427A;
     font-size: 1.6vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    line-height: 35px;
-    width: 29vw;
-    word-wrap: break-word;
-    text-align: auto;
+    line-height: 2vmax;
+    width: 29vmax;
+    text-align:start;
     display: flex;
 }
 .padcep {
-    position: absolute;
     color: #25427A;
     font-size: 1.8vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    left: 71.8vw;
-    bottom: 6.5vw;
-    display: flex;
 }
 #agrodiv .cep1 {
     color: #25427A;
     font-size: 1.8vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    position: absolute;
-    bottom: 6.5vw;
-    left: 77vw;
 }
 #agrodiv .tel {
-    position: absolute;
     font-size: 1.9vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #25427A;
-    left: 71.8vw;
-    bottom: 3.7vw;
 }
 #agrodiv .telefone1 {
-    position: absolute;
-    bottom: 3.9vw;
-    left: 77vw;
-    text-align: center;
     color: #25427A;
     font-size: 1.8vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 17%;
+    width: 17vw;
 }
 
-
+.containerdaf{
+    display: grid;
+    position: absolute;
+    left: 45vmax;
+    bottom: 6vmax;
+    gap: 1.5vmax;
+    height: 24vmax;
+}
 #dafdiv {
     position: relative;
     margin: auto;
 }
 #dafdiv img {
-    width: 90vw;
+    width: 90vmax;
 }
 #dafdiv .name1 {
-    position: absolute;
-    bottom: 26.2vw;
-    left: 45vw;
     color: black;
     font-size: 3vw;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bolder;
 }
 #dafdiv .cargo1 {
-    position: absolute;
-    bottom: 24.4vw;
-    left: 45vw;
-    text-align: center;
     color: black;
     font-size: 1.7vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 12px;
 }
 #dafdiv .mail1{
-    position: absolute;
-    bottom: 21.3vw;
-    left: 45vw;
     font-size: 1.7vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #dafdiv .localizacao1 {
-    position: absolute;
-    bottom: 9.2vw;
-    left: 45vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2.4vw;
-    width: 32vw;
+    width: 32vmax;
+    height: 10vmax;
 }
 #dafdiv .telefone1 {
-    position: absolute;
-    bottom: 5.2vw;
-    left: 44.6vw;
-    font-size: 2.4vw;
+    font-size: 2.4vmax;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #QRCodeImagedaf {
     position: absolute;
-    left: 77vw;
-    bottom: 3.2vw;
+    left: 79vmax;
+    bottom: 5vmax;
+    max-width: 14vw;
+    max-height: 14vw;
 }
 
 
+.containerasf{
+    display: grid;
+    position: absolute;
+    bottom: 11.2vmax;
+    left: 4vmax;
+    gap: 0.7vmax;
+    text-align: left;
+}
 #asfaltosdiv {
     position: relative;
     margin: auto;
 }
 #asfaltosdiv img{
     padding-top: 14px;
-    width: 93.5vw;
+    width: 93.5vmax;
 }
 #asfaltosdiv .name1 {
-    position: absolute;
-    bottom: 18.6vw;
-    left: 3.9vw;
-    text-align: center;
     color: rgb(235, 141, 0);
     font-size: 2.7vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
 }
 #asfaltosdiv .cargo1 {
-    position: absolute;
-    bottom: 16.2vw;
-    left: 4vw;
-    text-align: center;
     color: rgb(0, 0, 0);
     font-size: 1.5vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #asfaltosdiv .telefone1 {
-    position: absolute;
-    bottom: 13.7vw;
-    left: 3.9vw;
-    text-align: center;
     color: rgb(0, 0, 0);
     font-size: 1.7vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #asfaltosdiv .mail1 {
-    position: absolute;
-    bottom: 11.2vw;
-    left: 3.9vw;
-    text-align: center;
     color: rgb(0, 0, 0);
-    font-size: 1.3vw;
+    font-size: 1.3vmax;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #asfaltosdiv .localizacao1 {
     position: absolute;
-    bottom: 9vw;
-    left: 41.6vw;
+    bottom: 9vmax;
+    left: 41.6vmax;
     text-align: center;
     color: rgb(235, 235, 235);
     font-size: 1.3vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    max-width: 22.4vw;
-    height: 4vw;
+    max-width: 22.4vmax;
+    height: 4vmax;
     text-align: left;
 }
 #QRCodeImageasf {
     position: absolute;
-    left: 73vw;
-    bottom: 8vw;
+    left: 72.6vmax;
+    bottom: 7.8vmax;
+    max-width: 18vw;
+    max-height: 18vw;
 }
 
-
-#engelog {
-    position: relative;
-    margin: auto;
+.containereng{
+    text-align: left;
+    border: 1px solid black;
+    left: 4%;
+    bottom: 23%;
 }
 #engelogdiv img{
-    padding-top: 14px;
-    width: 94.9vw;
+    padding-top: 0.8vmax;
+    max-width: 97.9vmax;
 }
 #engelogdiv .name1{
-    position: absolute;
-    bottom: 17.9vw;
-    left: 3.9vw;
     color: rgb(235, 141, 0);
     font-size: 2.7vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
 }
 #engelogdiv .cargo1{
-    position: absolute;
-    bottom: 15.8vw;
-    left: 4vw;
     color: black;
     font-size: 1.5vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #engelogdiv .telefone1{
-    position: absolute;
-    bottom: 13vw;
-    left: 3.7vw;
     color: black;
     font-size: 1.7vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #engelogdiv .mail1{
-    position: absolute;
-    bottom: 11.2vw;
-    left: 3.9vw;
     color: black;
     font-size: 1.3vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #engelogdiv .localizacao1{
-    position: absolute;
-    bottom: 8.2vw;
-    left: 42.1vw;
+    bottom: 8.6vmax;
+    left: 42.1vmax;
     color: rgb(235,235,235);
-    font-size: 1.3vw;
+    font-size: 1.3vmax;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    max-width: 22.4vw;
-    height: 4vw;
+    max-width: 22.4vmax;
+    height: 4vmax;
     text-align: left;
 }
 #QRCodeImageeng {
-    position: absolute;
-    left: 73vw;
-    bottom: 8vw;
+    left: 76vw;
+    bottom: 10.6vw;
 }
 
-
+.containerpav{
+    display: grid;
+    bottom: 12vw;
+    left: 4.2vw;
+    position: absolute;
+    gap: 12px;
+}
 #pavimentosdiv{
     position: relative;
     margin: auto;
@@ -374,34 +353,22 @@
     width: 94.9vw;
 }
 #pavimentosdiv .name1{
-    position: absolute;
-    bottom: 19.6vw;
-    left:3.9vw;
     color: rgb(235, 141, 0);
     font-size: 2.7vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
 }
 #pavimentosdiv .cargo1{
-    position: absolute;
-    bottom: 17.6vw;
-    left: 4vw;
     color: black;
     font-size: 1.5vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #pavimentosdiv .telefone1{
-    position: absolute;
-    bottom: 15.2vw;
-    left: 3.7vw;
     color: black;
     font-size: 1.7vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #pavimentosdiv .mail1{
-    position: absolute;
-    bottom: 13.2vw;
-    left: 3.9vw;
     color: black;
     font-size: 1.2vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;

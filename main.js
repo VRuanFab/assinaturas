@@ -1,3 +1,4 @@
+window.addEventListener(ramalatv())
     function clicar() {
         //função do onchange principal das empresas
         function empresa() {
@@ -15,7 +16,8 @@
                     info(0);
                     localidade();
                     desbloquear();
-                    qrcode();
+                    ramalatv();
+                    
         
                 } else if (empresas[1].selected) {
                     //agro
@@ -28,6 +30,7 @@
                     info(1);
                     localidade();
                     bloquear();
+                    ramalatv();
         
                 } else if (empresas[2].selected) {
                     //daf
@@ -40,6 +43,7 @@
                     info(2);
                     localidade();
                     desbloquear();
+                    ramalatv();
                     
                 } else if (empresas[3].selected) {
                     //asf
@@ -52,6 +56,7 @@
                     info(3);
                     localidade();
                     desbloquear();
+                    ramalatv();
         
                 } else if (empresas[4].selected) {
                     //eng
@@ -64,6 +69,7 @@
                     info(4);
                     localidade();
                     desbloquear();
+                    ramalatv();
 
                 } else if (empresas[5].selected) {
                     //pav
@@ -76,12 +82,10 @@
                     info(5);
                     localidade();
                     desbloquear();
+                    ramalatv();
                 }
         }
-
-        //chamada da função acima
-        empresa();
-
+    empresa();
         //função que exibe as informações escritas
         function info(n) {
             if (n == 0) {
@@ -266,5 +270,14 @@
     function desbloquear() {
         let emailbloq = document.getElementById('email')
             emailbloq.disabled = false;
-    
     }
+
+    function ramalatv(){
+        var ramal = document.getElementById('ramal')
+        var ramalativo = document.getElementById('ramalatv')
+    if (ramalativo.checked == false){
+        ramal.disabled = true
+    } else {
+        ramal.disabled = false
+    }
+};

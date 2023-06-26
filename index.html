@@ -48,8 +48,11 @@
                     <p id="telefonegrp" class="telefone1"></p>
                     <p id="mailgrp" class="mail1"></p>
                 </div>
-                <p id="localizacaogrp" class="localizacao1"></p>
-                <img id="QRCodeImagegrp" style="width: 300px;">
+                <div class="containerramgrp">
+                    <p id="localizacaogrp" class="localizacao1"></p>
+                    <p id="ramalgrp" class="ramalnumgrp"></p>
+                </div>
+                <img id="QRCodeImagegrp">
         </div>
 
         <div id="agrodiv" class="esc">
@@ -66,8 +69,9 @@
             <div class="containeragr3">
                 <p class="tel"><strong>TEL:</strong></p>
                 <p id="telefoneagr" class="telefone1"></p>
+                <p id="ramalagr" class="ramalnumagr"></p>
             </div>
-            <img id="QRCodeImageagr" style="width: 300px;">
+            <img id="QRCodeImageagr">
         </div>
 
         <div id="dafdiv" class="esc">
@@ -79,7 +83,7 @@
                 <p id="localizacaodaf" class="localizacao1"></p>
                 <p id="telefonedaf" class="telefone1"></p>
             </div>
-            <img id="QRCodeImagedaf" style="width: 300px;">
+            <img id="QRCodeImagedaf">
         </div>
 
         <div id="asfaltosdiv" class="esc">
@@ -90,22 +94,28 @@
                 <p id="telefoneasf" class="telefone1"></p>
                 <p id="mailasf" class="mail1"></p>
             </div>
-            <p id="localizacaoasf" class="localizacao1"></p>
-            <img id="QRCodeImageasf" style="width: 300px;">
+            <div class="containerramasf">
+                <p id="localizacaoasf" class="localizacao1"></p>
+                <p id="ramalasf" class="ramalnumasf"></p>
+            </div>
+            <img id="QRCodeImageasf">
         </div>
 
         <div id="engelogdiv" class="esc">
             <img class="img" id="engelog" src="imagens/engelog.jpg">
-            <div class="containereng" style="position: absolute;">
+            <div class="containereng">
                 <p id="nameeng" class="name1"></p>
                 <p id="cargoeng" class="cargo1"></p>
                 <p id="telefoneeng" class="telefone1"></p>
                 <p id="maileng" class="mail1"></p>
             </div>
-            <p id="localizacaoeng" class="localizacao1" style="position: absolute;"></p>
-            <img id="QRCodeImageeng" style="width: 300px; position: absolute;">
+            <div class="containerrameng">    
+                <p id="localizacaoeng" class="localizacao1"></p>
+                <p id="ramaleng" class="ramalnumeng"></p>
+            </div>
+            <img id="QRCodeImageeng" style="max-width: 18vmax; max-height: 18vmax;">
         </div>
-
+        
         <div id="pavimentosdiv" class="esc">
             <img class="img" id="pavimentos" src="imagens/pavimentos.jpg">
             <div class="containerpav">
@@ -114,10 +124,13 @@
                 <p id="telefonepav" class="telefone1"></p>
                 <p id="mailpav" class="mail1"></p>
             </div>
+            <div class="containerrampav">    
                 <p id="localizacaopav" class="localizacao1"></p>
-            <img id="QRCodeImagepav" style="width: 300px;">
+                <p id="ramalpav" class="ramalnumpav"></p>
+            </div>
+            <img id="QRCodeImagepav">
         </div>
-
+        <div id="nada" class="esc"></div>
     </div>
     <script src="main.js" defer></script>
 </body>

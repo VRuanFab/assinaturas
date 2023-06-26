@@ -90,14 +90,14 @@
 }
 #grupodiv .localizacao1{
     position: absolute;
-    bottom: 9.2vmax;
+    bottom: 7.3vmax;
     left: 41.6vmax;
     text-align: center;
     color: rgb(235, 235, 235);
     font-size: 1.3vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 22.4vmax;
-    height: 4vmax;
+    width: 24vmax;
+    height: 6vmax;
     text-align: left;
 }
 #QRCodeImagegrp {
@@ -183,6 +183,7 @@
     width: 17vw;
 }
 
+
 .containerdaf{
     display: grid;
     position: absolute;
@@ -209,28 +210,37 @@
     font-size: 1.7vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 12px;
+    position: absolute;
+    bottom: 18vmax;
 }
 #dafdiv .mail1{
     font-size: 1.7vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    bottom: 14.8vmax;
 }
 #dafdiv .localizacao1 {
+    position: absolute;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2.4vw;
+    font-size: 2.3vw;
     width: 32vmax;
     height: 10vmax;
+    bottom: 4vmax;
 }
 #dafdiv .telefone1 {
+    position: absolute;
+    bottom: -1.5vmax;
     font-size: 2.4vmax;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 28vmax;
 }
 #QRCodeImagedaf {
     position: absolute;
     left: 79vmax;
     bottom: 5vmax;
-    max-width: 14vw;
-    max-height: 14vw;
+    max-width: 15vw;
+    max-height: 15vw;
 }
 
 
@@ -279,7 +289,7 @@
     color: rgb(235, 235, 235);
     font-size: 1.3vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    max-width: 22.4vmax;
+    max-width: 24.4vmax;
     height: 4vmax;
     text-align: left;
 }
@@ -292,57 +302,66 @@
 }
 
 .containereng{
+    position: absolute;
+    bottom: 9.6vw;
+    left: 3.4vw;
+    margin: 0.3vmax;
+    display: grid;
+    gap: 1vmax;
     text-align: left;
-    border: 1px solid black;
-    left: 4%;
-    bottom: 23%;
 }
-#engelogdiv img{
-    padding-top: 0.8vmax;
-    max-width: 97.9vmax;
+#engelogdiv{
+    position: relative;
 }
-#engelogdiv .name1{
+#engelogdiv img {
+    width: 94.2vmax
+}
+#engelogdiv .name1 {
     color: rgb(235, 141, 0);
-    font-size: 2.7vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
+    font-size: 2.3vw;
 }
-#engelogdiv .cargo1{
-    color: black;
-    font-size: 1.5vw;
+#engelogdiv .cargo1 {
+    font-size: 1.4vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-#engelogdiv .telefone1{
-    color: black;
-    font-size: 1.7vw;
+#engelogdiv .telefone1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2vw;
 }
-#engelogdiv .mail1{
-    color: black;
+#engelogdiv .mail1 {
     font-size: 1.3vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 29vw;
 }
 #engelogdiv .localizacao1{
-    bottom: 8.6vmax;
-    left: 42.1vmax;
-    color: rgb(235,235,235);
-    font-size: 1.3vmax;
+    position: absolute;
+    bottom: 7.3vmax;
+    left: 41.6vmax;
+    text-align: center;
+    color: rgb(235, 235, 235);
+    font-size: 1.3vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    max-width: 22.4vmax;
-    height: 4vmax;
+    width: 24vmax;
+    height: 6vmax;
     text-align: left;
 }
 #QRCodeImageeng {
-    left: 76vw;
-    bottom: 10.6vw;
+    position: absolute;
+    left: 75vmax;
+    bottom: 9vmax;
+    max-width: 16vw;
+    max-height: 16vw;
 }
+
 
 .containerpav{
     display: grid;
-    bottom: 12vw;
-    left: 4.2vw;
+    bottom: 12vmax;
+    left: 4.2vmax;
     position: absolute;
-    gap: 12px;
+    gap: 0.8vmax;
 }
 #pavimentosdiv{
     position: relative;
@@ -376,17 +395,19 @@
 }
 #pavimentosdiv .localizacao1{
     position: absolute;
-    bottom: 9.2vw;
-    left: 42.1vw;
+    bottom: 9.2vmax;
+    left: 42.1vmax;
     color: rgb(235,235,235);
     font-size: 1.3vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    max-width: 22.4vw;
-    height: 4vw;
+    max-width: 24.4vmax;
+    height: 4vmax;
     text-align: left;
 }
 #QRCodeImagepav {
     position: absolute;
-    left: 73vw;
-    bottom: 8vw;
+    left: 72.6vmax;
+    bottom: 7.8vmax;
+    max-width: 18vw;
+    max-height: 18vw;
 }

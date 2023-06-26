@@ -4,86 +4,70 @@ window.addEventListener(ramalatv())
         function empresa() {
             var empresas = document.querySelectorAll('.emp')
             let imagem = document.querySelectorAll('.esc')
+            var imagemarray = Array.from(imagem);
+            imagemarray.forEach((noimage) => {
                 if (empresas[0].selected) {
-                    //agro
-                    imagem[0].style.display = "block";
-                    imagem[1].style.display = "none";
-                    imagem[2].style.display = "none";
-                    imagem[3].style.display = "none";
-                    imagem[4].style.display = "none";
-                    imagem[4].style.display = "none";
-                    imagem[5].style.display = "none";
+                    //grupo
+                    var grupo = imagem[0]
+                    grupo.style.display = "block";
+                    noimage.style.display = "none";
                     info(0);
-                    localidade();
-                    desbloquear();
+                    localidade(1);
+                    bloquear(2);
                     ramalatv();
                     
         
                 } else if (empresas[1].selected) {
                     //agro
-                    imagem[1].style.display = "block";
-                    imagem[0].style.display = "none";
-                    imagem[2].style.display = "none";
-                    imagem[3].style.display = "none";
-                    imagem[4].style.display = "none";
-                    imagem[5].style.display = "none";
+                    var agro = imagem[1]
+                    agro.style.display = "block";
+                    noimage.style.display = "none";
                     info(1);
-                    localidade();
-                    bloquear();
+                    localidade(2);
+                    bloquear(1);
                     ramalatv();
         
                 } else if (empresas[2].selected) {
                     //daf
-                    imagem[2].style.display = "block";
-                    imagem[0].style.display = "none";
-                    imagem[1].style.display = "none";
-                    imagem[3].style.display = "none";
-                    imagem[4].style.display = "none";
-                    imagem[5].style.display = "none";
+                    var daf = imagem[2]
+                    daf.style.display = "block";
+                    noimage.style.display = "none";
                     info(2);
-                    localidade();
-                    desbloquear();
+                    localidade(1);
+                    bloquear(2);
                     ramalatv();
                     
                 } else if (empresas[3].selected) {
                     //asf
-                    imagem[3].style.display = "block";
-                    imagem[0].style.display = "none";
-                    imagem[1].style.display = "none";
-                    imagem[2].style.display = "none";
-                    imagem[4].style.display = "none";
-                    imagem[5].style.display = "none";
+                    var asf = imagem[3]
+                    asf.style.display = "block";
+                    noimage.style.display = "none";
                     info(3);
-                    localidade();
-                    desbloquear();
+                    localidade(1);
+                    bloquear(2);
                     ramalatv();
         
                 } else if (empresas[4].selected) {
                     //eng
-                    imagem[4].style.display = "block";
-                    imagem[0].style.display = "none";
-                    imagem[1].style.display = "none";
-                    imagem[2].style.display = "none";
-                    imagem[3].style.display = "none";
-                    imagem[5].style.display = "none";
+                    var eng = imagem[4]
+                    eng.style.display = "block";
+                    noimage.style.display = "none";
                     info(4);
-                    localidade();
-                    desbloquear();
+                    localidade(1);
+                    bloquear(2);
                     ramalatv();
 
                 } else if (empresas[5].selected) {
                     //pav
-                    imagem[5].style.display = "block";
-                    imagem[0].style.display = "none";
-                    imagem[1].style.display = "none";
-                    imagem[2].style.display = "none";
-                    imagem[3].style.display = "none";
-                    imagem[4].style.display = "none";
+                    var pav = imagem[5]
+                    pav.style.display = "block";
+                    noimage.style.display = "none";
                     info(5);
-                    localidade();
-                    desbloquear();
+                    localidade(1);
+                    bloquear(2);
                     ramalatv();
                 }
+            });
         }
     empresa();
         //função que exibe as informações escritas
@@ -198,80 +182,66 @@ window.addEventListener(ramalatv())
             }
 
         //exibe as localidades também na função de onchange
-        function localidade() {
+        function localidade(n) {
             var localizacao = document.querySelectorAll('.location')
-            if (localizacao[0].selected) {
-                enderecos(0);
-        }   else if (localizacao[1].selected) {
-                enderecos(1)
-        }    else if (localizacao[2].selected) {
-                enderecos(2) 
-        }   else if (localizacao[3].selected) {
-                enderecos(3);
-        }   else if (localizacao[4].selected) {
-                enderecos(4);
-        }   else if (localizacao[5].selected) {
-                enderecos(5);
-        }
-        }
+            if (n == 1){
+                let empresa = [grupo, agro, daf, asfaltos, engelog, pavimentos];
+                empresa[0] = document.getElementById('localizacaogrp');
+                empresa[1] = document.getElementById('localizacaoagr');
+                empresa[2] = document.getElementById('localizacaodaf');
+                empresa[3] = document.getElementById('localizacaoasf');
+                empresa[4] = document.getElementById('localizacaoeng');
+                empresa[5] = document.getElementById('localizacaopav');
 
-        //descreve qual empresa é para a função localidade
-        function enderecos(base) {
-            if (base == 0) {
-            document.getElementById('localizacaogrp').innerHTML = "Rodovia BR 116, 2524 - Km 65 - Cajazeiras, Fortaleza - CE, 60864-440"
-            document.getElementById('localizacaoagr').innerHTML = "Rodovia BR 116, 2524 - Km 65 - Cajazeiras, Fortaleza - CE"
+                empresa.forEach((noempresa) =>{
+                    if (localizacao[0].selected) {
+                        noempresa.innerHTML = "Rodovia BR 116, Nº 2524 - Km 65 - Cajazeiras, Fortaleza - CE, CEP - 60864-440"
+                }   else if (localizacao[1].selected) {
+                        noempresa.innerHTML = "Avenida Engenheiro Emiliano Macieira, Nº 100 - Tibiri, São Luís - MA, CEP - 65095-601"
+                }    else if (localizacao[2].selected) {
+                        noempresa.innerHTML = "Rua Dom Nivaldo Monte, Nº 103 - Emaús, Parnamirim - RN, CEP - 59149-070"
+                }   else if (localizacao[3].selected) {
+                        noempresa.innerHTML = "Avenida Prefeito Wall Ferraz, Nº 9247 - Lourival Parente, Teresina - PI, CEP - 64022-800"
+                }   else if (localizacao[4].selected) {
+                        noempresa.innerHTML = "Avenida Ademar Diogenes, Nº 583 - BR 135, KM 349 - São Pedro, Bom Jesus - PI, CEP - 64900-000"
+                }
+                });
+    } else if (n == 2){
+       if (localizacao[0].selected){
+            document.getElementById('localizacaoagr').innerHTML = "Rodovia BR 116, Nº 2524 - Km 65 - Cajazeiras, Fortaleza - CE"
             document.getElementById('cep').innerHTML = "60864-440"
-            document.getElementById('localizacaodaf').innerHTML = "Rodovia BR 116, 2524 - Km 65 - Cajazeiras, Fortaleza - CE, 60864-440"
-            document.getElementById('localizacaoasf').innerHTML = "Rodovia BR 116, 2524 - Km 65 - Cajazeiras, Fortaleza - CE, 60864-440"
-            document.getElementById('localizacaoeng').innerHTML = "Rodovia BR 116, 2524 - Km 65 - Cajazeiras, Fortaleza - CE, 60864-440"
-            document.getElementById('localizacaopav').innerHTML = "Rodovia BR 116, 2524 - Km 65 - Cajazeiras, Fortaleza - CE, 60864-440"
-        }   else if(base == 1) {
-            document.getElementById('localizacaogrp').innerHTML = "Avenida Engenheiro Emiliano Macieira, 100 - Tibiri, São Luís - MA, 65095-601"
-            document.getElementById('localizacaoagr').innerHTML = "Avenida Engenheiro Emiliano Macieira, 100 - Tibiri, São Luís - MA"
+
+        } else if (localizacao[1].selected){
+            document.getElementById('localizacaoagr').innerHTML = "Avenida Engenheiro Emiliano Macieira, Nº 100 - Tibiri, São Luís - MA"
             document.getElementById('cep').innerHTML = "65095-601"
-            document.getElementById('localizacaodaf').innerHTML = "Avenida Engenheiro Emiliano Macieira, 100 - Tibiri, São Luís - MA, 65095-601"
-            document.getElementById('localizacaoasf').innerHTML = "Avenida Engenheiro Emiliano Macieira, 100 - Tibiri, São Luís - MA, 65095-601"
-            document.getElementById('localizacaoeng').innerHTML = "Avenida Engenheiro Emiliano Macieira, 100 - Tibiri, São Luís - MA, 65095-601"
-            document.getElementById('localizacaopav').innerHTML = "Avenida Engenheiro Emiliano Macieira, 100 - Tibiri, São Luís - MA, 65095-601"
-        }   else if(base == 2) {
-            document.getElementById('localizacaogrp').innerHTML = "Rua Dom Nivaldo Monte, 103 - Emaús, Parnamirim - RN, 59149-070"
-            document.getElementById('localizacaoagr').innerHTML = "Rua Dom Nivaldo Monte, 103 - Emaús, Parnamirim - RN"
+
+        } else if (localizacao[2].selected){
+            document.getElementById('localizacaoagr').innerHTML = "Rua Dom Nivaldo Monte, Nº 103 - Emaús, Parnamirim - RN"
             document.getElementById('cep').innerHTML = "59149-070"
-            document.getElementById('localizacaodaf').innerHTML = "Rua Dom Nivaldo Monte, 103 - Emaús, Parnamirim - RN, 59149-070"
-            document.getElementById('localizacaoasf').innerHTML = "Rua Dom Nivaldo Monte, 103 - Emaús, Parnamirim - RN, 59149-070"
-            document.getElementById('localizacaoeng').innerHTML = "Rua Dom Nivaldo Monte, 103 - Emaús, Parnamirim - RN, 59149-070"
-            document.getElementById('localizacaopav').innerHTML = "Rua Dom Nivaldo Monte, 103 - Emaús, Parnamirim - RN, 59149-070"
-        }   else if(base == 3) {
-            document.getElementById('localizacaogrp').innerHTML = "Avenida Prefeito Wall Ferraz, 9247 - Lourival Parente, Teresina - PI, 64022-800"
-            document.getElementById('localizacaoagr').innerHTML = "Avenida Prefeito Wall Ferraz, 9247 - Lourival Parente, Teresina - PI"
+
+        } else if (localizacao[3].selected){
+            document.getElementById('localizacaoagr').innerHTML = "Avenida Prefeito Wall Ferraz, Nº 9247 - Lourival Parente, Teresina - PI"
             document.getElementById('cep').innerHTML = "64022-800"
-            document.getElementById('localizacaodaf').innerHTML = "Avenida Prefeito Wall Ferraz, 9247 - Lourival Parente, Teresina - PI, 64022-800"
-            document.getElementById('localizacaoasf').innerHTML = "Avenida Prefeito Wall Ferraz, 9247 - Lourival Parente, Teresina - PI, 64022-800"
-            document.getElementById('localizacaoeng').innerHTML = "Avenida Prefeito Wall Ferraz, 9247 - Lourival Parente, Teresina - PI, 64022-800"
-            document.getElementById('localizacaopav').innerHTML = "Avenida Prefeito Wall Ferraz, 9247 - Lourival Parente, Teresina - PI, 64022-800"
-        }   else if(base == 4) {
-            document.getElementById('localizacaogrp').innerHTML = "Avenida Ademar Diogenes, 583 - BR 135, KM 349 - São Pedro, Bom Jesus - PI, 64900-000"
-            document.getElementById('localizacaoagr').innerHTML = "Avenida Ademar Diogenes, 583 - BR 135, KM 349 - São Pedro, Bom Jesus - PI"
+
+        } else if (localizacao[4].selected){
+            document.getElementById('localizacaoagr').innerHTML = "Avenida Ademar Diogenes, Nº 583 - BR 135, KM 349 - São Pedro, Bom Jesus - PI"
             document.getElementById('cep').innerHTML = "64900-000"
-            document.getElementById('localizacaodaf').innerHTML = "Avenida Ademar Diogenes, 583 - BR 135, KM 349 - São Pedro, Bom Jesus - PI, 64900-000"
-            document.getElementById('localizacaoasf').innerHTML = "Avenida Ademar Diogenes, 583 - BR 135, KM 349 - São Pedro, Bom Jesus - PI, 64900-000"
-            document.getElementById('localizacaoeng').innerHTML = "Avenida Ademar Diogenes, 583 - BR 135, KM 349 - São Pedro, Bom Jesus - PI, 64900-000"
-            document.getElementById('localizacaopav').innerHTML = "Avenida Ademar Diogenes, 583 - BR 135, KM 349 - São Pedro, Bom Jesus - PI, 64900-000"
+
         }
     }
 }
-
+}
     //bloqueia o email da assinatura agro (na qual não usa email)
-    function bloquear() {
-        let emailbloq = document.getElementById('email')
-            emailbloq.disabled = true;
+    function bloquear(n) {
+        if (n == 1) {
+            let emailbloq = document.getElementById('email')
+                emailbloq.disabled = true;
+        } else if (n == 2) {
+            let emailbloq = document.getElementById('email')
+            emailbloq.disabled = false;
+        }
     }
     //desbloqueia o email da assinatura agro (para o uso das outras empresas)
-    function desbloquear() {
-        let emailbloq = document.getElementById('email')
-            emailbloq.disabled = false;
-    }
-
     function ramalatv(){
         var ramal = document.getElementById('ramal')
         var ramalativo = document.getElementById('ramalatv')
@@ -279,5 +249,10 @@ window.addEventListener(ramalatv())
         ramal.disabled = true
     } else {
         ramal.disabled = false
+        document.getElementById('ramalgrp').innerHTML = ramal.value
+        document.getElementById('ramalasf').innerHTML = ramal.value
+        document.getElementById('ramaleng').innerHTML = ramal.value
+        document.getElementById('ramalpav').innerHTML = ramal.value
+        document.getElementById('ramalagr').innerHTML = ramal.value
     }
 };

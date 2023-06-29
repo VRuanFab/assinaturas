@@ -83,8 +83,8 @@ window.addEventListener(ramalatv())
                 document.getElementById('mailgrp').innerHTML = email + "@grupofornecedora.com.br"
         
                 var number = document.getElementById('numero').value;
-                number = number.replace(/(\d{2})(\d{1})(\d{4})(\d{4})/, '($1) $2 $3-$4');
-                document.getElementById('telefonegrp').innerHTML = number
+                /*number = number.replace(/(\d{2})(\d{1})(\d{4})(\d{4})/, '($1) $2 $3-$4');*/
+                document.getElementById('telefonegrp').innerHTML = "+55" + number
 
                     var f2 = `BEGIN:VCARD\nVERSION:3.0\nN:${nome}\nTEL:${number}\nEMAIL:${email}@grupofornecedora.com.br\nEND:VCARD`
                     const encoded = encodeURIComponent(f2);
@@ -99,8 +99,8 @@ window.addEventListener(ramalatv())
                 document.getElementById('cargoagr').innerHTML = funcao
 
                 var number = document.getElementById('numero').value;
-                number = number.replace(/(\d{2})(\d{1})(\d{4})(\d{4})/, '($1) $2 $3-$4');
-                document.getElementById('telefoneagr').innerHTML = number
+                /*number = number.replace(/(\d{2})(\d{1})(\d{4})(\d{4})/, '($1) $2 $3-$4');*/
+                document.getElementById('telefoneagr').innerHTML = "+55" + number
 
             }else if (n == 2) {
                 var nome = document.getElementById('nome').value;
@@ -113,8 +113,8 @@ window.addEventListener(ramalatv())
                 document.getElementById('maildaf').innerHTML = email + "@fornecedoracaminhoes.com.br"
         
                 var number = document.getElementById('numero').value;
-                number = number.replace(/(\d{2})(\d{1})(\d{4})(\d{4})/, '($1) $2 $3-$4');
-                document.getElementById('telefonedaf').innerHTML = number
+                /*number = number.replace(/(\d{2})(\d{1})(\d{4})(\d{4})/, '($1) $2 $3-$4');*/
+                document.getElementById('telefonedaf').innerHTML = "+55" + number
 
                     var f2 = `BEGIN:VCARD\nVERSION:3.0\nN:${nome}\nTEL:${number}\nEMAIL:${email}@fornecedoracaminhoes.com.br\nEND:VCARD`
                     const encoded = encodeURIComponent(f2);
@@ -132,8 +132,8 @@ window.addEventListener(ramalatv())
                     document.getElementById('mailasf').innerHTML = email + "@fornecedoraasfaltos.com.br"
         
                     var number = document.getElementById('numero').value;
-                    number = number.replace(/(\d{2})(\d{1})(\d{4})(\d{4})/, '($1) $2 $3-$4');
-                    document.getElementById('telefoneasf').innerHTML = number
+                    /*number = number.replace(/(\d{2})(\d{1})(\d{4})(\d{4})/, '($1) $2 $3-$4');*/
+                    document.getElementById('telefoneasf').innerHTML = "+55" + number
 
                         var f2 = `BEGIN:VCARD\nVERSION:3.0\nN:${nome}\nTEL:${number}\nEMAIL:${email}@fornecedoraasfaltos.com.br\nEND:VCARD`
                         const encoded = encodeURIComponent(f2);
@@ -151,8 +151,8 @@ window.addEventListener(ramalatv())
                     document.getElementById('maileng').innerHTML = email + "@fornecedoraengelog.com.br"
                 
                     var number = document.getElementById('numero').value;
-                    number = number.replace(/(\d{2})(\d{1})(\d{4})(\d{4})/, '($1) $2 $3-$4');
-                    document.getElementById('telefoneeng').innerHTML = number
+                    /*number = number.replace(/(\d{2})(\d{1})(\d{4})(\d{4})/, '($1) $2 $3-$4');*/
+                    document.getElementById('telefoneeng').innerHTML = "+55" + number
                     
                         var f2 = `BEGIN:VCARD\nVERSION:3.0\nN:${nome}\nTEL:${number}\nEMAIL:${email}@fornecedoraengelog.com.br\nEND:VCARD`
                         const encoded = encodeURIComponent(f2);
@@ -160,18 +160,19 @@ window.addEventListener(ramalatv())
                         document.getElementById('QRCodeImageeng').src = link
                 
             } else if (n == 5) {
-                    var nome = document.getElementById('nome').value;
+                    let nome = document.getElementById('nome').value;
                     document.getElementById('namepav').innerHTML = nome
         
-                    var funcao = document.getElementById('funcao').value;
+                    let funcao = document.getElementById('funcao').value;
                     document.getElementById('cargopav').innerHTML = funcao
         
-                    var email = document.getElementById('email').value;
+                    let email = document.getElementById('email').value;
                     document.getElementById('mailpav').innerHTML = email + "@fornecedorapavimentos.com.br"
         
-                    var number = document.getElementById('numero').value;
-                    number = number.replace(/(\d{2})(\d{1})(\d{4})(\d{4})/, '($1) $2 $3-$4');
-                    document.getElementById('telefonepav').innerHTML = number
+                    let number = document.getElementById('numero').value;
+                    /*number = number.replace(/(\d{2})(\d{1})(\d{4})(\d{4})/, '($1) $2 $3-$4');*/
+                    
+                    document.getElementById('telefonepav').innerHTML = "+55" + number
 
                         var f2 = `BEGIN:VCARD\nVERSION:3.0\nN:${nome}\nTEL:${number}\nEMAIL:${email}@pavimentos.com.br\nEND:VCARD`
                         const encoded = encodeURIComponent(f2);
@@ -256,3 +257,11 @@ window.addEventListener(ramalatv())
         document.getElementById('ramalagr').innerHTML = ramal.value
     }
 };
+
+let inputnumero = document.getElementById('numero');
+inputnumero.addEventListener("keyup", function(event) {
+    var inputnumero2 = inputnumero.value;
+    if (inputnumero2.length === 2){
+        inputnumero.value = inputnumero2 + "(";
+    }
+});

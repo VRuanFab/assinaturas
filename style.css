@@ -102,10 +102,10 @@
 }
 #QRCodeImagegrp {
     position: absolute;
-    left: 75vmax;
-    bottom: 9vmax;
-    max-width: 16vw;
-    max-height: 16vw;
+    left: 72vmax;
+    bottom: 5.6vmax;
+    max-width: 23vw;
+    max-height: 23vw;
 }
 
 
@@ -211,13 +211,14 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 12px;
     position: absolute;
-    bottom: 18vmax;
+    bottom: 18.6vmax;
+    width: 28vmax;
 }
 #dafdiv .mail1{
     font-size: 1.7vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     position: absolute;
-    bottom: 14.8vmax;
+    bottom: 15vmax;
 }
 #dafdiv .localizacao1 {
     position: absolute;
@@ -295,10 +296,10 @@
 }
 #QRCodeImageasf {
     position: absolute;
-    left: 72.6vmax;
-    bottom: 7.8vmax;
-    max-width: 18vw;
-    max-height: 18vw;
+    left: 70vmax;
+    bottom: 5.6vmax;
+    max-width: 23vw;
+    max-height: 23vw;
 }
 
 .containereng{
@@ -312,6 +313,7 @@
 }
 #engelogdiv{
     position: relative;
+    bottom: 3vmax;
 }
 #engelogdiv img {
     width: 94.2vmax
@@ -349,10 +351,10 @@
 }
 #QRCodeImageeng {
     position: absolute;
-    left: 75vmax;
-    bottom: 9vmax;
-    max-width: 16vw;
-    max-height: 16vw;
+    left: 71vmax;
+    bottom: 5.7vmax;
+    max-width: 23vw;
+    max-height: 23vw;
 }
 
 
@@ -406,8 +408,17 @@
 }
 #QRCodeImagepav {
     position: absolute;
-    left: 72.6vmax;
-    bottom: 7.8vmax;
-    max-width: 18vw;
-    max-height: 18vw;
+    left: 70vmax;
+    bottom: 5.7vmax;
+    max-width: 23vw;
+    max-height: 23vw;
+}
+
+.ramal {
+    position: absolute;
+    bottom: 14.1vmax;
+    left: 41.8vmax;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3vw;
+    color: rgb(235,235,235);
 }
